@@ -1,0 +1,314 @@
+\documentclass[12pt]{article}
+\usepackage{enumerate}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{upquote,textcomp}
+\usepackage{dsfont}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{pythonhighlight}
+
+
+\usepackage{cleveref}
+\crefformat{section}{\S#2#1#3} % see manual of cleveref, section 8.2.1
+\crefformat{subsection}{\S#2#1#3}
+\crefformat{subsubsection}{\S#2#1#3}
+
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{.}{3}}
+\newcommand{\mlc}[1]{\multicolumn{1}{c}{#1}}
+
+\setlength{\parindent}{0cm}
+\setlength\parindent{24pt}
+\setlength{\parskip}{0.3cm plus4mm minus3mm}
+
+\oddsidemargin = 0.01 in 
+\textwidth = 6.5 in
+\textheight = 9.8 in
+\headsep = -1in
+
+\lstset{
+  frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  keepspaces=true,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{black},
+  keywordstyle=\color{black},
+  commentstyle=\color{black},
+  stringstyle=\color{black},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\DeclareMathOperator*{\argmin}{argmin}
+
+\title{\textbf{Nobody Writes Docstring:} Game Item Description Generation with Pretrained Language Models}
+\author{Ning Wan, Hongyu Zhang, Yuxuan Wang}
+\date{\today}
+\begin{document}
+
+\maketitle
+
+% -------------------------------------------------------------------------------------
+\section{\bf Project Description}
+  Nobody wants to write docstring. What if we can build a better description generator? 
+    Recall the games you played; the item descriptions contains information particular to 
+    the game settings or the game-world settings For example, you know the item is from \textit{Dark Soul} or \textit{Don't Starve} 
+    simply by reading the text: even when they are not! Therefore, our work is more 
+    developer-oriented, particularly convenient for those who want to develop mods for 
+    their favorite games and conform to a consistent world setting or style of writing. So, in this project, 
+    we would like to revisit Homework Two, the description generation. 
+    We want a generator that takes an item title as input and generates a 
+    corresponding "gamified" item description. However, instead of building an 
+    end-to-end system as we have done in Homework Two, we observe that such a task 
+    is two-fold:
+    \begin{itemize}
+      \item Generate a basic description for a simplified item name that depicts the main properties of this item. 
+        For instance, a sword is made of metal, a pointy weapon.
+      \item Render the utterance to sound like a game item when we condition it on the game category and full 
+        item name like \textit{King Arthur's Sword}.
+    \end{itemize}
+    To sum, we want to formulate this task as a combination of description generation and conditioned style transfer problem.
+ 
+% =================================================================================================
+\section{Related Works}
+  Our project leverages the recent advancement of large \textbf{Pre-trained Language Models} (PLM), e.g., 
+    GPT-3, T5, and BART \cite{gpt-3, t5, bart}. Further, it is shown that such PMLs can serve as knowledge bases, 
+    especially salient for simple factual knowledge \cite{comet, kblm}. This inspires us of using large PLMs as 
+    base description generator.
+
+  Our formulation of game item description generation resembles the most to the \textbf{Text Style Transfer} (TST) 
+    task with some variation. 
+    TST aims to control certain attributes in the generated text, such as politeness, emotion, humor, 
+    and many others \cite{tst_survey}. It involves a source style and a target style. In our case, the source 
+    style is the simple item description, where as the target style is the gamified description. Specifically, 
+    given the base description, we can construct a parallel dataset where standard sequence-to-sequence models 
+    can be applied \cite{s2s_style}.
+
+    However, we need to keep in mind that the renderer functions not only as a style transferer but also as a 
+      domain-specific knowledge base. For example, to generate fantasy-game-related item descriptions, a renderer 
+      needs to have prior knowledge about terms like Mana, Goblin, or Holy Grail. And we do not expect an out-of-the-box 
+      model has such knowledge pre-encoded \cite{domain_adaptation}. Therefore, the specific methods to solve this problem are under discussion.
+
+% =================================================================================================
+\section{Methods}
+  \subsection{Proposed Architecture}
+    According to our observation, we can decompose the game-item description 
+      generation as a two-phase process: base form description generation and rendering.
+      The two models are collated together to form a game item descriptor.
+
+    \subsubsection{Base Generator}
+    First of all, almost every game item has a "base form." Such base forms can be weapons, 
+      garments, or food. The base form of a game item reveals its essential properties. 
+      For instance, \textit{Excalibur} is still a sword, a pointy weapon (possibly) made of a 
+      piece of metal. Therefore, intuitively, to generate a description for a game item, 
+      we need a particular mechanism to help create a piece of text for its base form in 
+      the first place. Such a machine needs to possess common sense knowledge about the 
+      properties of various base forms, which naturally leads to large PLMs or models 
+      trained upon knowledge bases. Formally, a generator is a function with the signature,
+      \begin{python}
+
+          def generator(base_form: str) -> str:
+              """The generator model API. It should take a single 
+                  item like 'sword' and generate some common-sense-based 
+                  description for that item, e.g. 'a pointy piece of metal'.
+                  The <model> here is an abstraction, it can be a large PLM 
+                  like GPT-3 or specialized knowledge-base model like COMET-BART"""
+
+              prompt = make_prompt_gen(base_form)
+              base_desc = model_gen(prompt)
+              return post_proc_gen(base_desc)
+      \end{python}
+
+    \subsubsection{Game Renderer}
+    Next, we believe that two extra pieces of information contribute to the "game flavor" 
+      of the description. Firstly, where do these items appear? For instance, a cup in a 
+      dungeon may associate with adjectives like "filthy" or "rusty," while a mug in a 
+      kitchen can be "clean" or "cute." Secondly, the full name of that item, e.g., 
+      \textit{King Arthur Sword} instead of \textit{Sword}. We know that this particular weapon is from 
+      \textit{King Arthur's Legend}. So the corresponding descriptions should relate to terms like 
+      \textit{Avalon}, \textit{Knights of the Round Table}, or \textit{Holy Grail}. We can see that it also requires 
+      the renderer to have another set of common sense knowledge. However, such knowledge 
+      is more game-specific or world-specific: it is not likely to have a machine gun in 
+      greek mythology. In other words, the renderer serves as an (inverse) adapter, and 
+      the engineering advantages brought by the disentanglement are apparent, i.e., we do 
+      not need to re-train the often-humongous base generator when switching to a different 
+      set of settings or game. 
+      \begin{python}
+
+        def renderer(setting: str, full_name: str, base_desc: str) -> str:
+            """The renderer model API. It rephrase/diversify the item 
+                description conditioning on the <setting>, <full_name>, 
+                and pre-computed <base_desc>"""
+
+            prompt = make_prompt_ren(setting, full_name, base_desc)
+            game_desc = model_ren(prompt)
+            return post_proc_ren(game_desc)
+      \end{python}
+
+    \subsubsection{Item Base Form Extractor}
+    Another small but important piece of building block is the item base form extractor. 
+      Ideally, a user of our proposed system only needs to specify the full name of a game 
+      item, but a base generator only takes the \textbf{base form} as its input. Thus, we 
+      need a dedicated algorithm to extract/convert the game item to its base form. We 
+      currently explored two approaches. The first method is based on KeyBERT, which 
+      tries to find a subset of the tokens that best preserves the semantic information, measured 
+      by \textbf{cosine-similarity} between full name contextualized embedding and those of the sub-tokens'. However, the base form may not necessarily contained in the full name. So, another
+      method we proposed is to, again, rely on large PLMs and text-generation. We experimented 
+      with generation using COMET-BART via \textit{MadeOf} relation, and prompting-by-example with 
+      GPT-3. The GPT-3 model gives the best performance.
+  
+  \subsection{Model Development Procedure}
+    We introduce both planned development procedure as well as 
+      preliminary experiments in this section.
+
+    \subsubsection{Generator Construction}
+      \paragraph{Preliminary Experiments} As discussed above, the base description generation relies on a 
+        large PLM that can serve as a knowledge base. Therefore, we develop our baseline model based 
+        on \textbf{GPT-3} via \textbf{few-shots prompting}. We construct the prompt by concatenating 
+        ten \lstinline{"item: <ITEM>, description: <DESC>"} pairs. An example is shown below,
+        \begin{python}
+
+              prompt = f"""
+              item: Sunglasses, description: All of our sung...
+              item: Scarf, description: Feature -Great quality...
+                                  ...
+              item: Shoe, description: Kick back and relax...
+              item: {NEW_ITEM}, description:
+              """
+        \end{python}
+        The item descriptions we used is acquired from the Amazon Review Dataset, which is discussed 
+          in \cref{section:data}. This simple method works surprisingly well, which is discussed in
+          \cref{section:pre_results}.
+      
+      \paragraph{Planned Procedures} Although the preliminary result is satisfactory, prompting \lstinline{davinci} model
+        is very costly. Thus, our next step is to collect sufficient amount of examples, roughly a hundred, and fine-tune a 
+        smaller model such as \lstinline{ada} and \lstinline{babadge}. Further, we have not yet fully experimented various 
+        crucial sampling hyperparameter such as the temperature and penalties. 
+
+    \subsubsection{Renderer Construction}
+      \paragraph{Preliminary Experiments} Again, we use \textbf{GPT-3 prompting} for the proof-of-concept purpose. 
+        An example prompt is shown below,
+        \begin{python}
+          
+              prompt = f"""
+              item: Wood table category: Tavern base_desc: The table is made of wood ... desc: The table is old and dusty... ===
+                                  ...
+              item: {FULL_NAME} category: {SETTING} base_desc: {BASE_DESC} desc:
+              """
+        \end{python}
+        The base description is generated from pre-constructed base-desc-generator, and target description 
+          is taken from the LIGHT dataset, discussed in \cref{section:data}.
+
+      \paragraph{Planned Procedures} Since the prompting performance is under expectation, we plan to 
+        perform error analysis first and discuss what information is not captured by the model, or, 
+        if we need to fine-tune the model on full LIGHT dataset or other augmented datasets.
+
+% =================================================================================================
+\section{Data}
+\label{section:data}
+  \subsection{Amazon Review (Meta) Data} 
+    This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews 
+      spanning from May 1996 to July 2014. This dataset includes reviews (ratings, text, helpfulness votes), 
+      product metadata (descriptions, category information, price, brand, and image features), and 
+      links (also viewed/also bought graphs) \footnote{https://jmcauley.ucsd.edu/data/amazon/}. For this project, \textbf{we only use the metadata} which 
+      contains \textbf{item names} and corresponding \textbf{short descriptions}. But, we noticed that 
+      the dataset is noisy (for our purpose). For instance, it may include advertising 
+      text that is depicting the properties of the (base) item. Thus, we manually select a tiny subset of 
+      descriptions that are more relevant. Further, we plan to augment the dataset with Wikipedia descriptions.
+
+  \subsection{LIGHT} We briefly discuss the LIGHT dataset since we frequently work with this dataset throughout
+    this course. At this stage, we only use the objects dataset. For each one of the game items, there are 
+    \lstinline{'name'}, \lstinline{'in_room_ids'}, \lstinline{'base_form'}, and \lstinline{'descriptions'}. 
+    To formulate a style transfer task, we first apply 
+    the pre-constructed base generator to \lstinline{'base_form'} to make a pseudo-parallel dataset. 
+    Next, for the rooms an item exists in, we use the \lstinline{'category'} of the rooms to control the 
+    style transfer (use as \lstinline{'setting'}). Finally, we have the required information for the renderer.
+
+% =================================================================================================
+\section{Evaluation Plan}
+The most important component of our system is the renderer. We primarily focus on evaluating lexical overlapping and 
+  semantic preservation. We use the \textbf{BLEU Score} and \textbf{ROUGE Score} 
+  to measure the lexical overlap. The reason for including the ROUGE score is to assess the recalled properties of 
+  gamified description. To evaluate the degree of semantic preservation, we plan to use SentenceBERT to compute the 
+  semantic similarity between the generated text and the ground truth. The perfect result would be the two pieces of 
+  texts being almost paraphrases of each other. We discard \textbf{Perplexity} evaluation because the game item descriptions may naturally be very complex 
+  because the "uncommon words," i.e., game-specific words, are very common. 
+
+Although our main focus is to evaluate the renderer, we also understand that the base descriptions are 
+  strong baseline. Thus, we will compare the generation quality against the "raw descriptions."
+
+% =================================================================================================
+\section{Preliminary Results}
+\label{section:pre_results}
+  \subsection{Base Generator}
+    At the point of writing this milestone report, we have constructed baseline models for both of 
+      the generator and renderer based on GPT-3 prompting. The base generator achieves satisfactory 
+      generation quality, examples are shown below.
+      \begin{itemize}
+        \item \textbf{Knife}: \textit{The knife is a tool that has been used by humans for centuries. It is a versatile tool that can be used for a variety of purposes, 
+          including cutting, slicing, and carving. A knife is typically composed of a blade and a handle. 
+          The blade is the sharpened edge of the knife that is used for cutting, while the handle is used 
+          for grip and control. There are a variety of different types of knives, including pocket knives, 
+          kitchen knives, and hunting knives.} 
+        \item \textbf{Necklace}: \textit{This beautiful cowrie shell necklace can fit any neck size! 
+          It looks great and is strung on a comfortable and strong nylon cord, which is also waterproof. 
+          Imported from Africa.}
+      \end{itemize}
+
+    One interesting phenomenon is that when we plugin \textit{King Arthur Sword}, the generator 
+      gives \textit{"The King Arthur sword is a replica of the sword that was used by King Arthur 
+      in the famous legend. The sword is made of high quality stainless steel and has a polished 
+      finish. It is also very sharp and can be used for display or cosplay purposes."}
+      It shows that, without rendering, the base descriptor produce items 
+      that are derived from day-today life. Even the king's sword only serves as a costume. This 
+      proves the necessity of a renderer.
+
+    Further, we experiment with COMET-ATOMIC-BART, but the out-of-the-box performance is not as satisfactory. Most 
+      generated descriptions are too short, i.e., not informative enough. We hypothesis that a more informative 
+      description requires a combination of relations more than just \lstinline{MadeOf}, which needs 
+      heavy engineering, beyond the scope of prototyping.
+
+  \subsection{Game Renderer}
+    \begin{python}
+          
+      >>> baseline("king arthur sword", "magical realm", get_description("sword"))
+      'The sword is old and rusted, but still sharp. The blade is engraved with the words "Excalibur".'
+      >>> baseline("teeth of troll", "dungeon", get_description("teeth"))
+      'The teeth are sharp and white, and they look like they could belong to a troll. They are large and sharp, and would be dangerous if used as a weapon.'
+      >>> baseline("enchanted bone", "Graveyard", get_description("bone"))
+      'The bone is old and dry. It is long and hard, and can be used as a weapon. The bones are old and crumbling, showing a storied past.'
+    \end{python}
+
+    We randomly selected ten objects from the LIGHT dataset to construct the few-shots prompt. Then, we extracted the object name, 
+      the category (style) of the room that it was in, and the original object description for each object. The prompt is the 
+      object's full name, the room category, and the base description given the base form of the object name using the base 
+      generator we constructed above. The completion is the intended game object description.
+
+\section{Attribution}
+  \begin{itemize}
+    \item \textbf{Ning Wan}, constructs the base description generator baseline as well as item base-form extractor; will focus on improving the quality of the sub-models. 
+    \item \textbf{Hongyu Zhang}, constructs the renderer baseline; will focus on further improving the rendering quality.
+    \item \textbf{Yuxuan Wang} initiates idea and manages the progress of the project; also responsible for the report writing.  
+  \end{itemize}
+
+% -------------------------------------------------------------------------------------
+\bibliography{milestone2.bib}
+
+\bibliographystyle{acm}
+
+\end{document}

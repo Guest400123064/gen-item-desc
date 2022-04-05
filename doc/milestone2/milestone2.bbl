@@ -1,0 +1,57 @@
+\begin{thebibliography}{1}
+
+\bibitem{gpt-3}
+{\sc Brown, T.~B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.,
+  Neelakantan, A., Shyam, P., Sastry, G., Askell, A., Agarwal, S.,
+  Herbert{-}Voss, A., Krueger, G., Henighan, T., Child, R., Ramesh, A.,
+  Ziegler, D.~M., Wu, J., Winter, C., Hesse, C., Chen, M., Sigler, E., Litwin,
+  M., Gray, S., Chess, B., Clark, J., Berner, C., McCandlish, S., Radford, A.,
+  Sutskever, I., and Amodei, D.}
+\newblock Language models are few-shot learners.
+\newblock {\em CoRR abs/2005.14165\/} (2020).
+
+\bibitem{domain_adaptation}
+{\sc Gururangan, S., Marasovic, A., Swayamdipta, S., Lo, K., Beltagy, I.,
+  Downey, D., and Smith, N.~A.}
+\newblock Don't stop pretraining: Adapt language models to domains and tasks.
+\newblock {\em CoRR abs/2004.10964\/} (2020).
+
+\bibitem{comet}
+{\sc Hwang, J.~D., Bhagavatula, C., Bras, R.~L., Da, J., Sakaguchi, K.,
+  Bosselut, A., and Choi, Y.}
+\newblock {COMET-ATOMIC} 2020: On symbolic and neural commonsense knowledge
+  graphs.
+\newblock {\em CoRR abs/2010.05953\/} (2020).
+
+\bibitem{tst_survey}
+{\sc Jin, D., Jin, Z., Hu, Z., Vechtomova, O., and Mihalcea, R.}
+\newblock Deep learning for text style transfer: {A} survey.
+\newblock {\em CoRR abs/2011.00416\/} (2020).
+
+\bibitem{bart}
+{\sc Lewis, M., Liu, Y., Goyal, N., Ghazvininejad, M., Mohamed, A., Levy, O.,
+  Stoyanov, V., and Zettlemoyer, L.}
+\newblock {BART:} denoising sequence-to-sequence pre-training for natural
+  language generation, translation, and comprehension.
+\newblock {\em CoRR abs/1910.13461\/} (2019).
+
+\bibitem{kblm}
+{\sc Petroni, F., Rockt{\"{a}}schel, T., Lewis, P. S.~H., Bakhtin, A., Wu, Y.,
+  Miller, A.~H., and Riedel, S.}
+\newblock Language models as knowledge bases?
+\newblock {\em CoRR abs/1909.01066\/} (2019).
+
+\bibitem{t5}
+{\sc Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M.,
+  Zhou, Y., Li, W., and Liu, P.~J.}
+\newblock Exploring the limits of transfer learning with a unified text-to-text
+  transformer.
+\newblock {\em CoRR abs/1910.10683\/} (2019).
+
+\bibitem{s2s_style}
+{\sc Rao, S., and Tetreault, J.~R.}
+\newblock Dear sir or madam, may {I} introduce the {YAFC} corpus: Corpus,
+  benchmarks and metrics for formality style transfer.
+\newblock {\em CoRR abs/1803.06535\/} (2018).
+
+\end{thebibliography}
