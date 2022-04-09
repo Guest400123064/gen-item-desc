@@ -1,0 +1,783 @@
+Name	Type	Physical DMG	Magic DMG	Fire DMG	Lightning DMG	Dark DMG	Crit DMG	Description
+Parrying Dagger	Daggers	60	0	0	0	0	110	"Dagger with a greatly curved guard.
+A dagger made especially for parrying which is usually equipped in one's left hand in place of a shield.
+Skill: Parry
+Repel an attack at the right time to follow up with a critical hit. Works while equipped in either hand."
+Harpe	Daggers	62	0	0	0	0	100	"The large sickle-shaped body, used for severing corpses, is a worker’s tool in the Undead Settlement.
+The sharp edge is on the inside of the weapon, itself designed for cutting and pulling, thus allowing for good damage against shielded foes.
+Skill: Quickstep
+Instantly step behind or around the side of foes. Especially effective when locked on to target."
+Dagger	Daggers	65	0	0	0	0	130	"Standard small dagger.
+Small daggers lack power or reach, but can deal quick consecutive hits due to their light weight. Highly effective when used for critical hits, such as after parrying or attacking from behind.
+Skill: Quickstep
+Instantly step behind or around the side of foes. Especially effective when locked on to target."
+Brigand Twindaggers	Daggers	55	0	0	0	0	125	"These paired daggers are the preferred weapons of the brigands of a distant land. 
+When two-handed, the wielder holds a blade in each hand, allowing for divergent attacks that include left-handed moves. 
+Skill: Quickstep 
+Instantly step behind or around the side of foes. Especially effective when locked on to target."
+Scholar's Candlestick	Daggers	58	0	0	0	0	115	"A candlestick covered in ivory scales once used by the Scholars of the Great Archives.
+ This served as their guiding light, as well as a tool of self-restraint. Even today, wielders of this weapon benefit from the resulting sorcery-strengthening properties.
+Skill: Guiding Light
+A candle provides a temporary source of light which reveals additional guidance. "
+Bandit's Knife	Daggers	79	0	0	0	0	110	"A wide single-edged shortsword.
+Primarily a slicing weapon, but its blade is crafted to cause bleeding, making it a favorite of lowly thieves and bandits.
+Skill: Quickstep
+Instantly step behind or around the side of foes. Especially effective when locked on to target."
+Handmaid's Dagger	Daggers	85	0	0	0	0	110	"Dagger used by handmaids of the Profaned Capital. Each successful attack replenishes a slight amount of FP. 
+ It is said that these women took pleasure in wounding others.
+Skill: Blind Spot
+Use against shielded foes to break through their guard by attacking from the side. "
+Mail Breaker	Daggers	89	0	0	0	0	125	"A small sword made for thrusting attacks.
+This hard, edgeless sword can pierce through tough armor, and boasts a deadly critical attack.
+Skill: Shield Splitter
+Aim carefully, and attack in a large forward lunge to pierce through enemy shields and inflict damage directly."
+Corvian Greatknife	Daggers	93	0	0	0	0	110	"Dagger of the unwanted, those guided by heretical storytellers. 
+A rather large dagger with a powerful attack, but this transparent attempt to intimidate foes reveals much about its owner's fears.
+Skill: Blind Spot
+Use against shielded foes to break through their guard by attacking from the side."
+Tailbone Short Sword	Daggers	106	0	0	0	0	110	Twisted dagger favored by the wretched, failed prisoners of Irithyll Dungeon.
+Rotten Ghru Dagger	Daggers	64	0	0	0	0	100	"A crude, half-rotten dagger.
+Choice weapon of the blunt-horned Ghrus, descendants of the acolytes of Farron Keep.
+The rancid blade is drenched in rotten waste, making it acutely poisonous.
+Skill: Quickstep
+Instantly step behind or around the side of foes. Especially effective when locked on to target."
+Murky Hand Scythe	Daggers	72	0	0	0	22	100	"A short-shafted hand scythe wielded by the murkmen who rise from the depths.
+Enveloped by a black dampness, and imbued with the strength of dark"
+Aquamarine Dagger	Daggers	67	67	0	0	0	100	"A dagger fitted with aquamarine crystal.
+Engraved with a prayer in the old tongue to ward off incident. Perhaps it was a parting gift given to one sent off on great travels."
+Long Sword	Straight Swords	110	0	0	0	0	100	A balanced, widely-used standard straight sword. Inflicts reliable standard damage, as well as high thrust damage.
+Sunlight Straight Sword	Straight Swords	112	0	0	0	0	100	"Straight sword imbued with the strength of lightning.
+This featureless long sword contains the very power of the sun. Perhaps is a relic of one-sided adoration.
+Skill: Oath of Sunlight
+Raise the sword aloft when praising the sun to boost attack and damage absorption for self and allies in vicinity. The warriors of sunlight are co-operators from an ancient age. 
+"
+Broken Straight Sword	Straight Swords	70	0	0	0	0	100	"<span style=""font-size: 12pt;"">A straight sword with a broken blade.</span>
+<span style=""font-size: 12pt;"">A weapon with no exceptional qualities. Only a mad Hollow would choose to fight with this.</span>
+<span style=""font-size: 12pt;"">Skill: Stance</span>
+<span style=""font-size: 12pt;"">While in stance, use normal attack to break a foe's guard from below, and strong attack to slash upwards with a forward lunge. Only, neither move will appear very impressive with a broken sword.</span>"
+Broadsword	Straight Swords	117	0	0	0	0	100	"A straight sword with a broad blade designed for slashing.
+A large sweeping attack makes this effective against crowds, but is prone to deflection from walls in narrow spaces.
+Skill: Stance
+While in stance, use normal attack to break a foe's guard from below, and strong attack to slash upwards with a forward lunge."
+Astora Straight Sword	Straight Swords	129	0	0	0	0	100	"A well-crafted sword named after the ruined land.
+Astora, before its fall, was a land replete with royal blood, and this weapon is both a reminder and heirloom of that era.
+Skill: Stance
+While in stance, use normal attack to break a foe's guard from below, and strong attack to slash upwards with a forward lunge."
+Lothric Knight Sword	Straight Swords	103	0	0	0	0	110	"A well-crafted straight sword designed for thrusting attacks, wielded by the venerable Knights of Lothric. 
+The Knights of Lothric, with their drakes, once crushed anything that threatened their shores. Of course, that was a long, long time ago.
+Skill: Stance
+While in stance, use normal attack to break a foe's guard from below, and strong attack to slash upwards with a forward lunge. "
+Irithyll Straight Sword	Straight Swords	124	0	0	0	0	100	"Straight sword bestowed upon the Outrider Knights of the Boreal Valley. This weapon is enshrouded in frost, and causes frostbite.
+Every Outrider Knight one day devolves into a beast, constantly hounded by Pontiff Sulyvahn's black eyes.
+Skill: Stance
+While in stance, use normal attack to break a foe's guard from below, and strong attack to slash upwards with a forward lunge."
+Shortsword	Straight Swords	99	0	0	0	0	110	Small straight sword excelling in thrusting attacks.
+Cleric's Candlestick	Straight Swords	70	77	0	0	0	100	"Candle stick used as both sword and catalyst. Used for worship by the Deacons of the Deep. 
+The deacons, under the guidance of Archdeacon McDonnell, became both Clergymen and sorcerers. 
+Skill: Guiding Light 
+A candle provides a temporary source of light which reveals additional guidance."
+Barbed Straight Sword	Straight Swords	111	0	0	0	0	100	"Sword of Longfinger Kirk, the infamous Knight of Thorns. This sword's blade is lined with countless deadly thorns.
+The thorns of this ominous weapon induce heavy bleeding.
+Skill: Stance
+While in stance, use normal attack to break a foe's guard from below, and strong attack to slash upwards with a forward lunge."
+Dark Sword	Straight Swords	115	0	0	0	0	100	"Pitch-black straight sword of the Darkwraith, survivor of the land swallowed by darkness.
+The Darkwraiths were the first red orb invaders, and originators of a unique sword technique inspired by their thick, broad blades.
+Skill: Stomp
+Use one's weight to lunge forward with a low stance and increased poise, and follow with strong attack for an upward slash."
+Gotthard Twinswords	Straight Swords	100	0	0	0	0	100	The hunters known as the King's Black Hands wielded paired weapons. These belonged to Gotthard, who fled the castle.
+Lothric's Holy Sword	Straight Swords	107	0	0	0	0	100	"Prince Lothric's straight sword, blessed by Emma with potent magic. 
+Young Lothric was meant to be a champion, and was expected to wield this platinum sword, but some things will remain distant dreams forever.
+Skill: Sacred Lothric Light
+Assume stance to imbue sword with sacred light, and use strong attack to release light  together with a great thrust of the sword."
+Anri's Straight Sword	Straight Swords	117	0	0	0	0	100	"Sword precious to Anri, another Unkindled. The dullest type of blade found in the ruined land of Astora.
+Only, it was once the sword of an earnest noble figure, and its attacks are boosted by that elusive, essential property unique to humans: luck.
+Skill: Stance
+While in stance, use normal attack to break a foe's guard from below, and strong attack to slash upwards with a forward lunge."
+Morion Blade	Straight Swords	131	0	0	0	0	100	"A twisted sword resembling the towers of Londor's Sable Church. Eight branching blades and thorns induce bleeding.
+The church's blessing makes the weapon revel in the agony of its owner. Heavy losses of HP boost attack, a curse most befitting its deformed appearance.
+Skill: Stance
+While in stance, use normal attack to break a foe's guard from below, and a strong attack to slash upwards with a forward lunge."
+Valorheart	Straight Swords	120	0	0	0	0	100	Weapon once wielded by the Champion of the Undead Match. A special paired set consisting of a broad sword and a lion shield.
+Ringed Knight Straight Sword	Straight Swords	120	0	11	0	0	100	"Straight sword wielded by the Ringed Knights. 
+         The arms of early men were forged in the Abyss, and betray a smidgen of life."
+Claymore	Greatswords	138	0	0	0	0	100	"An unusually large and heavy greatsword normally wielded with two hands. 
+This highly versatile weapon can be swung broadly or thrusted. 
+Skill: Stance 
+While in stance, use normal attacks to break a foe's guard from below, and strong attack to slash upwards with a forward lunge."
+Bastard Sword	Greatswords	138	0	0	0	0	100	"A widely-used heavy greatsword normally wielded with two hands. 
+Broad horizontal sweeping attacks make this sword effective against multiple enemies, but unwieldy in narrow spaces.
+Skill: Stomp
+Use one's weight to lunge forward with a low stance and increased poise, and follow with a strong attack for an upward slash."
+Hollowslayer Greatsword	Greatswords	145	0	0	0	0	100	"Greatsword used for a lifetime by a masked knight. Harbors the fears that lurk within the mind of Hollows, and is particularly effective against them. 
+Bestowed to a proper Mirrah knight long ago. Two-hand to execute special sword techniques.
+Skill: Stance
+While in stance, use normal attack to break a foe’s guard from below, and strong attack to slash upwards with a forward lunge."
+Executioner's Greatsword	Greatswords	131	0	0	0	0	100	"Greatsword of a debauched executioner used for beheadings. 
+This sword retains a keen memory of its executioner's duty, and absorbs FP from each fallen foe. 
+Skill: Stomp 
+Use one's weight to lunge forward with a low stance and increased poise, and follow with strong attack for a spinning slash."
+Black Knight Sword	Greatswords	173	0	0	0	0	100	"Greatsword wielded by the Black Knights who wander the lands. Designed to face chaos demons.
+The Black Knights constantly faced foes larger than themselves, and this sword's unique attack greatly reduces enemy poise.
+Skill: Perseverance
+Raise sword in the name of the First Lord to temporarily boost poise. Damage reduces while activated."
+Flamberge	Greatswords	158	0	0	0	0	100	"Greatsword with an undulating blade. The blade, resembling flame, was crafted to mutilate flesh and induce bleeding.
+Skill: Stance
+While in stance, use normal attack to break a foe’s guard from below, and strong attack to slash upwards with a forward lunge.
+"
+Wolf Knight's Greatsword	Greatswords	126	0	0	0	0	100	"Greatsword of a knight tainted by the dark of the Abyss, and master of the wolf's blood of Farron. 
+The wolf knight was the first Abyss Watcher, and his sword is more punishing against creations of the abyss. 
+Skill: Wolf Sword 
+While in stance, use normal attack for a low spinning slash, or the strong attack to leap forward in a vertically-slashing somersault."
+Wolnir's Holy Sword	Greatswords	151	0	0	0	0	100	"A holy sword eroded by the Abyss. When Wolnir fell to the Abyss, he was gripped by a fear of true darkness, and pleaded to the gods for the first time.
+This holy sword, together with three armlets stripped from the corpses of clerics, gave him some semblance of comfort.
+Skill: Wrath of the Gods
+Thrust weapon into earth to emit powerful shockwave. The wrath of those swallowed by the Abyss is a thing to be wary of indeed."
+Greatsword of Judgement	Greatswords	101	67	0	0	0	100	"A ceremonial sword, held in Pontiff Sulyvahn's left hand, respresenting the judgement of the moon, but with magic far closer to sorcery than any existing lunar power. Its dark blue hues, deeper than the darkest moon, reflect sorcerer Sulyvahn's true nature.
+Skill: Stance of Judgment
+Assume stance to unleash dark magic. Use normal attack for a lunging thrust, and strong attack to emit side-sweeping wave. "
+Moonlight Greatsword	Greatswords	69	130	0	0	0	100	"Legendary dragon weapon associated with Seath the paledrake.
+Charge strong attack to its limit to unleash moonlight wave.
+Oceiros, the Consumed King, was infatuated with the search for moonlight, but in the end, it never revealed itself to him.
+Skill: Moonlight Vortex
+Draw sword back and thrust to unleash torrential moonlight. "
+Storm Ruler	Greatswords	110	0	0	0	0	100	"Greatsword with a broken blade, also known as the Giantslayer for the residual strength of storm that brings giants to their knees.
+Yhorm the Giant once held two of these, but gave one to the humans that doubted him, and left the other to a dear friend before facing his fate as a Lord of Cinder.
+Skill: Storm King
+Assume stance to imbue sword with storm. Most effective when facing giants."
+Firelink Greatsword	Greatswords	119	0	80	0	0	100	"The Lords of Cinder linked the First Flame, and this Greatsword was wielded by their deific manifestation. This coiled sword, found thrust in the bonfire, existed long before the throneless lords themselves.
+Skill: Ember
+The fading flame momentarily illuminates and launches itself forward."
+Twin Princes' Greatsword	Greatswords	118	0	73	0	0	100	"Sword forged from the reunion of the inseparable swords born from the souls of Lothric and Lorian, the twin princes.
+Their union is rooted in a curse, and perpetuated by grief.
+Skill: Sacred Light and Flame
+While in stance, use normal attack to cast Sacred Lothric Light, and strong attack to cast Flame of Lorian. "
+Drakeblood Greatsword	Greatswords	83	65	0	65	0	100	"Greatsword wielded by an order of knights who venerate dragon blood.
+This sword, its blade engraved with script symbolizing dragon blood, inflicts magic and lightning damage.
+Skill: Stance
+While in stance, use normal attack to break a foe’s guard from below, and strong attack to slash upwards with a forward lunge.
+"
+Onyx Blade	Greatswords	80	0	0	0	115	100	Elfriede, the eldest amongst her sisters and leader of the Sable Church, bestowed this sword to her knight. Only, the sword was a farewell gift, and acceptance signified the knight's resignation from Elfriede's service.
+Gael's Greatsword	Greatswords	147	0	0	0	0	100	Greatsword of Slave Knight Gael, the only weapon that he kept with him from beginning to end.
+Zweihander	Ultra Greatswords	145	0	0	0	0	100	"Ultra greatsword with a large, long blade. Wielded with two hands, yet still requiring great strength due to its weight. 
+Execute powerful attacks that take advantage of its weight, or utilize its sharp blade in thrust attacks.
+Skill: Stomp
+Use one's weight to lunge forward with a low stance and increased poise, and follow with strong attack for an upward slash."
+Greatsword	Ultra Greatswords	159	0	0	0	0	100	"This ultra greatsword, with its thick blade, is one of the heaviest of its kind.
+Highly destructive if intolerably heavy.
+There would appear to be some credence to the rumors that this sword tested the true limits of human strength.
+Skill: Stomp
+Use one's weight to lunge forward with a low stance and increased poise, and follow with strong attack for a spinning slash."
+Farron Greatsword	Ultra Greatswords	125	0	0	0	0	100	"Greatsword of the Abyss watchers which is atypically paired with a dagger.
+The dagger is utilized as a wedge in the left hand while the greatsword is held in the right, a unique technique that was synonymous with the Undead Legion. Confounds foes the manner of wolves hunting prey. 
+Skill: Parry
+Deflect an attack when timed properly and follow up with a critical hit, executed with the dagger."
+Fume Ultra Greatsword	Ultra Greatswords	149	0	0	0	0	100	"This twisted sword, the heaviest of all ultra greatswords, resembles black slate.
+This weapon, said to belong to a traitor from long ago, was so heavy that it found no owner, and became a forgotten relic of history.
+Skill: Stomp
+Use one's weight to lunge forward with a low stance and increased poise, and follow with a crushing strong attack."
+Profaned Greatsword	Ultra Greatswords	161	0	0	0	0	100	"A ceremonial sword, held in Pontiff Sulyvahn's right hand, representing the Profaned Flame.
+Long ago, when Sulyvahn was yet a young sorcerer, he discovered the Profaned Capital and an unfading flame below a distant tundra of Irithyll, and a burning ambition took root within him.
+Skill: Profaned Flame
+Temporarily summon the Profaned Flame. Lunge forward and use strong attack to enshroud blade in flame."
+Black Knight Greatsword	Ultra Greatswords	185	0	0	0	0	100	"Ultra greatsword wielded by the Black Knights who wander the lands. Designed to face chaos demons.
+The Black Knights constantly faced foes larger than themselves, and this sword's unique attack greatly reduces enemy poise. "
+Cathedral Knight Greatsword	Ultra Greatswords	149	0	0	0	0	100	Ultra greatsword wielded by the knights of the Cathedral of the Deep.
+Lorian's Greatsword	Ultra Greatswords	151	0	79	0	0	100	"<p style=""text-align: left;"">Ultra greatsword of Lorian, Prince Lothric's older brother. Cast in smoldering molten steel, and stained black. 
+Before Lorian embraced his brother's curse, he was a knight who single handedly slayed the demon prince, but the victory eternally scorched his sword with flame."
+Lothric Knight Greatsword	Ultra Greatswords	131	0	0	87	0	100	Ultra greatsword of the venerable knights of Lothric. Imbued with the strength of lightning, the trademark of dragon hunting.
+Astora Greatsword	Ultra Greatswords	132	0	0	0	0	100	"This greatsword, bestowed only upon elite knights, is a relic of the ruined land of Astora. 
+Designed for a focus on thrust attacks, this sword is hard and sharp, but not unusually heavy. 
+Skill: Charge 
+Hold sword at waist and charge at foe. Use strong attack while charging to extend the length of the charge."
+Ringed Knight Paired Greatswords	Ultra Greatswords	185	0	11	0	0	100	"Paired black greatswords wielded by the Ringed Knights.
+The arms of early men were forged in the Abyss, and betray a smidgen of life. For this the gods cast a seal of fire upon such weapons, and those who possessed them."
+Scimitar	Curved Swords	90	0	0	0	0	100	"Small curved sword that excels in swift movements and consecutive attacks.
+The scimitar's flesh-rending slash atacks are greatly compromised against armor and tough scale-covered hides.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and follow with strong attack for a spinning vertical-slash."
+Pontiff Knight Curved Sword	Curved Swords	123	0	0	0	0	100	"Curved sword wielded by the Pontiff’s knights, frigid spirits that linger in Irithyll.
+The large blade appears to be eaten away by insects, making it lightweight but also brittle.
+Skill: Frost Blade
+Execute large spinning motion to embue blade with frost, and follow through with a strong attack that slashes with a giant blade made of frost."
+Falchion	Curved Swords	117	0	0	0	0	100	"Standard curved sword and widely-used slashing weapon.
+The falchion's flesh-rending slash attacks are greatly compromised against armor and tough scale-covered hides.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and continue spinning to transition into strong attack."
+Sellsword Twinblades	Curved Swords	99	0	0	0	0	100	"Paired scimitars used by certain sellswords. The scimitars' sharp blades make for effective slashing attacks, but fare poorly against metal armor and tough scale-covered hides. 
+With a scimitar in each hand, the wielder can vary their onslaught with unique left-handed attacks when in the proper stance. 
+Skill: Spin Slash 
+Slice into foes with a large spinning motion, and continue spinning to transition into a strong attack"
+Warden Twinblades	Curved Swords	93	0	0	0	0	100	"Paired weapon wielded by the grave wardens of the Cathedral of the Deep. 
+The grave wardens of the cathedral, who put down reincarnating corpses, wield weapons that cause profuse bleeding, for the loss of blood and bodily fluids is said to slow reanimation. 
+Skill: Spin Slash 
+Slice into foes with a large spinning motion, and continue spinning to transition into strong attack."
+Shotel	Curved Swords	104	0	0	0	0	100	"Broadly curved sword known as the favored weapon of the tragic Embraced Knight. 
+Shaped to sneak around the defenses of shields, this sword requires ample dexterity to wield effectively. 
+Skill: Spin Slash 
+Slice into foes with a large spinning motion, and follow with strong attack for a spinning vertical-slash."
+Dancer's Enchanted Swords	Curved Swords	79	62	62	0	0	100	None
+Storm Curved Sword	Curved Swords	110	0	0	0	0	100	"Curved sword imbued with the strength of the Stormdrake.
+The Nameless King, ally of the ancient dragons, fought beside the Stormdrake in countless battles.  When the great beast fell, the king claimed his soul, as was the custom in the age of gods
+Skill: Tornado
+Imbue blade with the wrath of storm in a spinning motion, and follow with a strong attack to bear that wrath upon foes."
+Carthus Curved Sword	Curved Swords	115	0	0	0	0	100	"Curved sword of Carthus swordsmen. 
+This weapon's thick, heavy blade is crafted to cause bleeding, and requires ample strength and dexterity to wield effectively, suggesting that the swordsmen of Carthus were amongst the mightiest.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and continue spinning to transition into strong attack."
+Carthus Shotel	Curved Swords	106	0	0	0	0	100	"Strangely curved sword crafted to cause bleeding, wielded by Carthus swordsmen.
+Shaped to sneak around the defenses of shields, this sword requires ample dexterity to wield effectively.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and continue spinning to transition into strong attack."
+Rotten Ghru Curved Sword	Curved Swords	103	0	0	0	0	100	"A crude, half-rotten curved sword.  
+Choice weapon of the blunt-horned Ghrus, descendants of the acolytes of Farron Keep. The rancid blade is drenched in rotten waste, making it acutely poisonous.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and continue spinning to transition into strong attack."
+Painting Guardian's Curved Sword	Curved Swords	88	0	0	0	0	100	"A weapon described in legends passed down amongst heretics, wielded by the Painting Guardians.
+A uniquely shaped weapon with a flat tip.
+Skill: Chained Dance
+Execute relentless consecutive attacks while tracing a circle in a unique dance of deadly grace. 
+"
+Crescent Moon Sword	Curved Swords	78	78	0	0	0	100	"Ringfinger Leonhard's weapon of choice, a type of shotel imbued with the power of the moon.
+Leonhard set out on a journey of rebirth, but decided instead to serve the goddess as a knight, and inherited this weapon. 
+Skill: Crescent Blade
+Assume a broad stance and fire off crescent moon blades. "
+Follower Sabre	Curved Swords	112	0	0	0	0	100	Great curved sword wielded by Farron Followers. Its great weight enables heavy-handed chain attacks.
+Demon's Scar	Curved Swords	0	0	99	0	0	110	"This chaotic thing, the last flame kindled by a demon prince, is shaped like the claw marks of a demon.
+It is both a fiery bladed weapon, and pyromancy flame."
+Murakumo	Curved Greatswords	132	0	0	0	0	100	"The curved greatsword of Alva, Seeker of the Spurned, specially forged in an eastern land. Sharp but heavy, this sword requires extreme strength and dexterity to wield.
+The search for the spurned had no end, and so the wayfaring knight warmed to a most deformed weapon.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and continue spinning to transition into a strong attack."
+Carthus Curved Greatsword	Curved Greatswords	122	0	0	0	0	100	"Large curved sword wielded by swordsmen of Carthus.
+The lightest of the curved greatswords. Crafted to cause bleeding.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and continue spinning to transition into strong attack."
+Exile Greatsword	Curved Greatswords	148	0	0	0	0	100	"Bloodstained greatsword wielded by one of the Watchdogs of Farron, who preside over the slumber of fallen warriors. The blade is a reminder of the exile's past misdeeds.
+Inhuman strength is required to wield this heaviest of curved greatswords.
+Skill: Spin Slash
+Slice into foes with a large spinning motion, and continue spinning to transition into a strong attack."
+Old Wolf Curved Sword	Curved Greatswords	155	0	0	0	0	100	"Curved sword bearing the soul of the old wolf that stays with the Watchdogs of Farron.
+This sword, like a wolf on the prowl, boosts attack and restores HP with each consecutive hit.
+Skill: Wolf Leap
+Slice into foes with a large spinning motion, then leap out of harm's way and follow through with a strong attack."
+Harald Curved Greatsword	Curved Greatswords	140	0	0	0	0	100	Giant gold-decorated curved sword wielded by warriors of the Harald Legion, who sought the dark soul.
+Darkdrift	Katanas	134	0	0	0	0	100	"A cursed sword with an unseen blade, the choice weapon of Yuria of Londor.
+Yuria, a mentor of the Sable Church and accomplished swordswoman, is said to have claimed a hundred lives with this weapon. 
+Skill: Darkdrift
+Aim carefully, and pierce with a large forward lunge. The unseen blade penetrates straight through shields, for nothing can defend from Darkdrift."
+Washing Pole	Katanas	121	0	0	0	0	100	"A stunning, unusually long katana forged in an eastern land. 
+The extreme length of this blade provides immense range, but also renders the blade extremely fragile.
+Skill: Hold
+Assume a holding stance to rapidly execute a lunging slash with normal attack, or a deflective parry with strong attack."
+Uchigatana	Katanas	115	0	0	0	0	100	"A unique katana characterized by the fine craftsmanship of an eastern land where it was forged. 
+The finely-sharpened blade cuts flesh like butter and causes bleeding, but breaks easily as a result.
+Skill: Hold 
+Assume a holding stance to rapidly execute a lunging slash with a normal attack, or a deflecting parry with the strong attack."
+Chaos Blade	Katanas	103	0	0	0	0	100	"A cursed sword of unknown origin bearing uncanny streaks on its blade.
+Attacks also damage its wielder.
+The sword is not unlike a thing misshappen, granted life, but never welcome in this world. In other words, chaos itself.
+Skill: Hold
+Assume a holding stance to rapidly execute a lunging slash with normal attack, or a deflecting parry with strong attack."
+Black Blade	Katanas	122	0	0	0	0	100	"A short katana wielded by the swordsman and distinguished guest of High Lord Wolnir. This shiny black blade is thick, but shorter than the typical katana.
+The swordsman was a master of a rare technique, traces of which can be observed in this weapon's strong attack.
+Skill: Hold
+Assume a holding stance to rapidly execute a lunging slash with a normal attack, or a deflecting parry with a strong attack."
+Onikiri and Ubadachi	Katanas	104	0	0	0	0	100	"The hunters known as the King's Black Hands wielded paired weapons. These belonged to Kamui, who looked after the prince.
+Kamui brought Onikiri with him to the Undead Settlement, where he forged Ubadachi, and was finally prepared to join the ranks of the royal hunters.
+Skill: Onislayer
+Leap forward and slash mercilessly with both blades, cutting open foes."""
+Bloodlust	Katanas	105	0	0	0	0	100	"Katana of the old Mound-maker.
+The Mound-maker piled sacrifices upon the altar, but became the final offering himself, leaving this katana as a gift for his dear family.
+Skill: Bloodlust
+Stain blade with one’s own blood to temporarily grant uncanny sharpness. For one driven by bloodlust, nothing deserves to remain standing."
+Frayed Blade	Katanas	101	0	0	0	41	100	A dragon weapon symbolizing Darkeater Midir.
+Estoc	Thrusting Swords	105	0	0	0	0	100	"Large thrusting sword used for piercing through the armor of enemies. 
+The sharp edge of the sword's rock-solid blade can also be used in slashing attacks.
+Skill: Lock onto your target and hit them in a large forward lunge to pierce through enemy shields and inflict staggering damage."
+Rapier	Thrusting Swords	95	0	0	0	0	130	"A lightweight thrusting sword used in noble duels employing refined techniques.
+The primary attack of a thrusting sword is a series of stabs that render foes vulnerable for a devastating final thrust. Can also attack with shield up.
+Skill: Stance
+From stance, use normal attack to back step and execute a surprise attack, or strong attack for consecutive thrusting."
+Crystal Sage's Rapier	Thrusting Swords	55	82	0	0	0	100	"Thrusting Sword with tiny crystals scattered across its blade, used by the Crystal Sages for self-defence.
+The crystals boost the magic damage inflicted by the sword, and the item discovery of its wielder, fruit of the lifetime of research conducted by the sages.
+Skill: Stance. 
+From stance, use normal attack to back step and execute a surprise attack, or a strong attack for consecutive thrusting."
+Irithyll Rapier	Thrusting Swords	116	0	0	0	0	110	"Thrusting sword bestowed upon the Outrider Knights of the Boreal Valley. This weapon is shrouded in frost, and causes frostbite.
+Every Outrider Knight one day devolves into a beast, constantly hounded by Pontiff Sulyvahn's black eyes.
+Skill: Shield Splitter
+Aim carefully, and attack in a large forward lunge to pierce through enemy shields and inflict damage directly."
+Ricard's Rapier	Thrusting Swords	97	0	0	0	0	100	"A strikingly decorative rapier of an Undead prince spoken of in ancient stories.
+Although many of the tales surrounding the prince are questionable, this thrusting weapon suggests that the stories of his graceful technique were in fact true.
+Skill: Ricard's Lunge and Press
+Assume a quick stance, lunge forward, and execute a stunning chain attack. Sustain offensive with strong attack. "
+Crow Quills	Thrusting Swords	98	0	0	0	0	120	Thrusting sword wielded by Corvian Knights, and a special paired weapon. When twin-handed, brandish four thin-edge blades in the left hand.
+Battle Axe	Axes	125	0	0	0	0	100	"Easily-wielded axe crafted for battle and inflicting standard damage.
+It's weight can be used to inflict high damage, but must be used carefully as it leaves its wielder open to retaliation.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack."
+Hand Axe	Axes	110	0	0	0	0	100	"A crude hand-axe that serves both as a weapon, and a tool of many uses.
+Favored by pyromancers of the Great Swamp, this axe has a short range but only moderate weight, and reasonable damage. Easily wielded, and more powerful than it appears.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack."
+Thrall Axe	Axes	104	0	0	0	0	100	"Small hand axe used by Lothric slaves. 
+A cunning weapon for a cunning lot, this axe is quick and deadly.
+Skill: Quickstep
+Instantly step behind or around the side of foes. Especially effective when locked on to target."
+Dragonslayer's Axe	Axes	90	0	0	90	0	100	"Axe favored by Creighton the Wanderer, infamous deserter of the Knights of Mirrah.
+Called Dragonslayer's Axe for the lightning that pulsates within its blade, but Creighton used it to slay men.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack, and pierce through shields to inflict direct damage."
+Butcher Knife	Axes	95	0	0	0	0	100	"Butcher's knife with an oddly large blade wielded by the madwoman haunting the Road of Sacrifices. 
+Squarely-landed hits restore HP. 
+Back in the Undead Settlement, the woman acquired a taste for human flesh, of which she took glee in partaking. 
+Skill: Sharpen 
+Sharpening the blade increases HP restored with each successful hit."
+Brigand Axe	Axes	124	0	0	0	0	100	"Axe favored by brigands of a distant land. Surprisingly sturdy battle axe that requires more strength to wield than a standard axe.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack."
+Winged Knight Twinaxes	Axes	122	0	0	0	0	100	"Paired beheading axes wielded by the Winged Knights, who swore themselves to the Angels.
+These axes, more befitting of an executioner than a knight, are indented to fit the human body.
+Skill: Chain Spin
+Sweep foes in a large spinning motion and use strong attack to continue the motion until stamina is exhausted.
+"
+Eleonora	Axes	156	0	0	0	0	100	"A strange weapon found among malformed inhabitants of the Profaned Capital.
+The Profaned Flame was triggered by the curse of these women, relatives of a certain oracle, but despite their culpability, they went on living, without any cares.
+Skill: Feast Bell
+Hold up axe and wave to emit a solemn chime to temporarily make weapons lacerating, and to restore HP for each hit."
+Man Serpent Hatchet	Axes	125	0	0	0	0	100	"Hatchet of the serpent men guarding Archdragon Peak. Has a unique, curved blade that can sneak past shields.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack, and pierce through shields to inflict direct damage."
+Millwood Battle Axe	Axes	135	0	0	0	0	100	Battle axe wielded by Millwood Knights. Its blade is blessed by the symbol of the Ethereal Oak
+Greataxe	Greataxes	188	0	0	0	0	100	"Greataxe resembling a hunk of raw iron.
+If one posesses the inhuman strength required to lift the weapon, the great heft of its attacks will send foes flying. 
+However, since every swing makes use of one's entire body, attacks leave the wielder wide open to retaliation.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack."
+Demon's Greataxe	Greataxes	157	0	88	0	0	100	"This greataxe, a favorite among demons, contains the strength of fire. The demons, born of Chaos, harbor fire, and yet they are twisted and malformed, such that they were never meant to be.
+Skill: Demonic Flare
+Briefly cause flame to flare, and smash it upon earth and foes. 
+
+"
+Great Machete	Greataxes	167	0	0	0	0	100	"This giant machete has a slash attack, and is a worker's tool in the Undead Settlement.
+This dismantling tool was not originally intended for use in battle.
+Skill: Sharpen
+Scrape the blade to sharpen and enable a cleaner cut."
+Yhorm's Great Machete	Greataxes	185	0	0	0	0	100	"Great machete wielded long ago by Yhorm the Giant.
+Yhorm once lumbered on the frontlines with a greatshield. But one day, in place of his shield, a left-hand notch was added to his machete, enabling the smashing technique that would become the legacy of his later years.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack, and enables a crushing strong attack. "
+Dragonslayer Greataxe	Greataxes	203	0	0	74	0	100	"Melted iron greataxe that once formed part of the Dragonslayer Armour.
+Thickly imbued with the power of lightning. Use skill to draw upon the techniques used to slay the archdragons.
+Skill: Falling Bolt
+Hold axe high in the air to gather fierce lightning, and smash ground to whip the bolts to the ground."
+Black Knight Greataxe	Greataxes	216	0	0	0	0	100	"Greataxe of the black knights who wander the lands. Used to face chaos demons.
+The unique attack of this axe greatly reduces enemy poise, reflecting the tremendous size of the enemies that the knights have fearlessly faced.
+Skill: Warcry
+Let out a spirated warcry that temporarily boosts attack, and enables a special consecutive strong attack. "
+Earth Seeker	Greataxes	154	0	0	0	0	100	"<em>This large twin-bladed axe forged with bronze is a ceremonial weapon normally used in sacred rites. </em>
+<em>Millwood is a land of primitive earth worship where chieftain knights served as high priests. </em>
+
+<em>Skill: Earthen Wrath</em>"
+Mace	Hammers	115	0	0	0	0	100	"Iron hammer designed for use in battle. A common weapon for clerics.
+This bladeless strike weapon is effective against most foes, and can break the guard of a shield.
+Skill: Perserverance
+Assume an unfaltering stance of prayer to temporarily boost poise. Damage reduced while activated."
+Club	Hammers	108	0	0	0	0	100	"A simple wooden club. Characterized by savage leaping attacks.
+This crude bladeless strike weapon is effective against most foes, and can break the guard of a shield.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack, and enables a special consecutive strong attack."
+Morning Star	Hammers	122	0	0	0	0	100	"Hammer with a sharp spike on its pommel. One of the more barbaric cleric weapons.
+The sharp thorns allow this strike weapon to induce bleeding.
+Skill: Perseverance
+Assume an unfaltering stance of prayer to temporarily boost poise. Damage reduced while activated."
+Reinforced Club	Hammers	110	0	0	0	0	100	"A club made more deadly by the attachment of numerous nails to its head.  
+The nails allow this strike weapon to be lacerating, but the damage caused by their insertion has reduced its durability, making the weapon fragile.  
+Skill: Warcry  
+Let out a spirited warcry that temporarily boosts attack, and enables a special consecutive strong attack."
+Drang Hammers	Hammers	110	0	0	0	0	100	"Paired hammers of the Drang Knights, descendants from the land known for the legend of the Linking of the Fire.
+When the Drang Knights disbanded, they scattered across the lands as sellswords. They quickly became known for shieldless, aggressive tactics that struck fear in the hearts of men.
+Skill: Spin Bash
+Bash foes with a large spinning motion, and utilize momentum to transition into an overhanded strong attack smash."
+Heysel Pick	Hammers	93	70	0	0	0	100	"Choice weapon of Yellowfinger Heysel, a Finger of Rosaria and xanthous scholar.
+It`s both a weapon and sorcery staff. The gold specks are remnants of lost sorceries.
+Skill: Steady Chant
+For a short moment, boost the strength of sorceries."
+Blacksmith Hammer	Hammers	105	0	0	0	0	100	"Metal hammer passed down amongst blacksmiths of the shrine. Serves as a strike weapon, but also excels at reducing poise and breaking the guard of a shield.
+Of course, a hammer's true potential is realized in the hands of a blacksmith.
+Skill: Perseverance
+Assume an unfaltering stance of prayer to temporarily boost poise. Damage reduced while activated."
+Warpick	Hammers	113	0	0	0	0	100	"A war hammer with a long prolonged head.Was originally a pickaxe, but was refitted for battle. This simple but deadly weapon hits heavily with thrust damage,easily puncturing metal armor.
+Skill: Galvanize
+Temporarily boost stamina recovery speed by sheer force of will, perhaps as a channeling of the original owners industrious efforts."
+Large Club	Great Hammers	148	0	0	0	0	100	"Large wooden club. Requires considerable strength to wield.
+Characterized by savage leaping attacks. Its weight makes it easier to break the guard of shields.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack, and enables a special consecutive strong attack."
+Gargoyle Flame Hammer	Great Hammers	122	0	100	0	0	100	"Stone torch hammer wielded by gargoyles of the Profaned Capital. 
+The Profaned Flame, which never goes out, imbues this weapon with a fire attack.
+Skill: Kindled Fury
+Anchor weapon in earth and use strong attack to launch successive volleys of fire from the tip of the hammer. "
+Great Club	Great Hammers	152	0	0	0	0	100	"Wood club fashioned from the branch of a giant tree. Requires considerable strength to wield.
+A hard, durable weapon. Its weight makes it easier to break the guard of shields.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack, and enables special consecutive strong attack."
+Vordt's Great Hammer	Great Hammers	176	0	0	0	0	100	"Great Hammer wielded by Vordt, the outrider knight of the Boreal Valley. Weapon is inbued with frost, and causes frostbite.
+Frost accumulates in the body causing frostbite, which saps one's health, lowers absorption, and slows stamina recovery.
+Skill: Perseverance
+Anchor weapon in earth to temporarily boost poise. Damage reduced while activated."
+Great Mace	Great Hammers	185	0	0	0	0	100	"Large mace wielded by the knights of the Cathedral of the Deep. 
+The extremely heavy strike attacks of this weapon are devastating and will break weaker shields with a single blow. Wielding such a weapon will require inhuman strength. 
+Skill: Perseverance 
+Anchor weapon in earth to temporarily boost poise. Damage reduced while activated."
+Morne's Great Hammer	Great Hammers	200	0	0	0	0	100	"Greathammer bestowed upon Carim Knights who demonstrate outstanding strength and unwavering faith. Decorated by a ward of Carim Temple, and imbued with the twisted rage of Apostle Morne.
+Skill: Morne's Rage
+Stick weapon into earth and emit a powerful shockwave. Also, similar to Perseverance, temporarily boosts poise and reduces damage received."
+Great Wooden Hammer	Great Hammers	103	0	0	0	0	100	"This giant wooden hammer is a worker's tool in the Undead Settlement. Intended to grind flesh and bone to prepare for burial, rather than use in battle.
+Skill: Spin Bash
+Bash foes with a large spinning motion. and utilize momentum to transition into an overhanded strong attack smash."
+Smough's Great Hammer	Great Hammers	205	0	0	0	0	100	"Twisted great Hammer associated with Smough, the last knight to remain at his post, guarding the ruined cathedral.
+Restore HP while attacking, a carryover from Smough's past as an executioner.
+Skill: Perseverance
+Anchor weapon in earth to temporarily boost poise. Damage reduced while activated."
+Old King's Great Hammer	Great Hammers	180	0	69	0	0	100	"Great Hammer of the Old Demon King.
+This weapon has survived since old Izalith, and is imbued with remnants of the Chaos Flame.
+Skill: Molten Perseverance
+Anchor weapon in earth to temporarily boost poise, and use strong attack to repeatedly stab earth to trigger molten explosions."
+Pickaxe	Great Hammers	140	0	0	0	0	100	"Tool used by a miner for digging up earth. Not intended for use in battle. 
+Yet the strong downward swing of this tool once shattered large boulders, and easily punctures weaker armor. 
+Skill: Galvanize 
+Temporarily boosts stamina recovery speed by sheer force of will, which an old miner needed to get through the day."
+Dragon Tooth	Great Hammers	188	0	0	0	0	100	"Created from an everlasting dragon tooth that will never break.
+Left by Havel himself, along with his boulder-like great shield. Grants its wielder resistance to magic and fire.
+Skill: Perserverance
+Anchor weapon in earth to temporarily boost poise. Damage reduced while activated."
+Spiked Mace	Great Hammers	149	0	0	0	0	100	None
+Quakestone Hammer	Great Hammers	189	0	0	0	0	100	A Stonehammer wielded by the Millwood Knights, with a head of naturally-formed stone.
+Ledo's Great Hammer	Great Hammers	170	0	0	0	0	100	Great Hammer wielded by the Silver Knight Ledo. Ledo's hammer is by far the heaviest weapon amongst those wielded by the knights of Anor Londo.
+Caestus	Fist & Claws	91	0	0	0	0	100	"A fistfighter's weapon made from thick straps of leather studded with iron rivets.
+When two-handed, caesti are equipped in each hand.
+Skill: Perseverance
+Cross arms in front of the body to temporarily boost poise. Damage reduced while activated."
+Demon's Fist	Fist & Claws	111	0	77	0	0	100	"A demonic fist that burns with fiery essence. Its wielder can release this power through use of its Skill. When two-handed, fists are equipped in each hand.
+Skill: Flame Whirlwind
+Spin through opponents with abandon, flaming fists outstretched. Using a strong attack while spinning utilizes your momentum to slam the ground with both fists.
+
+"
+Dark Hand	Fist & Claws	88	0	0	0	150	100	"Weapon that allows its wielder to evoke an art unique to Londor, the land of the Hollow. It is also said to be an ancient relic of a Primordial Serpent.
+The Dark Hand mercilessly saps the essence of its victims, and can also double as a special shield. Cannot be used two-handed.
+Skill: Lifedrain
+Embrace the victim and steal their HP. Can only be used against humans. "
+Claw	Fist & Claws	86	0	0	0	0	110	"Weapon favored by intelligencers of an eastern land. The lacerations it infllicts do not mend easily.
+When two-handed, claws are equipped to each hand.
+Skill: Leaping Slash
+Perform a forward leaping slash at the opponent's head. When succesful, functions as a head shot, inflicting heavy damage. 
+
+"
+Manikin Claws	Fist & Claws	81	0	0	0	0	110	"Weapon of the Pale Shades, assassins of the Sable Church of Londor. The curved claws cause heavy bleeding.
+When two handed, claws are equipped to each hand.
+Skill: Quickstep
+Instantly step behind or around the side of foes. Especially effective when locked on to target."
+Crow Talons	Fist & Claws	91	0	0	0	0	110	Talons used by Corvian Knights. Inflicts five perpendicular slashes, causing heavy bleeding.
+Spear	Spears & Pikes	104	0	0	0	0	100	"Common short spear that allows attacking with shield up.
+Spear attacks are centered on thrusting, but can inflict high damage when timed with the end of an enemy’s swing.
+Skill: Shield Splitter
+Take a large step forward and make a single focused thrust to puncture enemy shields and inflict damage."
+Tailbone Spear	Spears & Pikes	118	0	0	0	0	100	"Twisted spear favored by the wretched, failed prisoners of Irithyll Dungeon.
+Crafted from a feeble tailbone, and seen as a sign of the dragons. Their screams are oft heard inside the dungeon, as they naively mutilate their unworthy flesh.
+Skill: Unleash Dragon
+Thrust the spear to unleash the strength of dragons, similar to an ancient dragon weapon, only with its power tragically faded."
+Winged Spear	Spears & Pikes	95	0	0	0	0	100	"A long-hilted spear with winged lugs. Long reach, and can be used with shield up. Spear attacks are centered on thrusting, but can inflict high damage when timed with the end of an enemy's swing.
+Skill: Charge
+Hold spear at waist and charge at foe. Use strong attack while charging to extend the length of the charge."
+Drang Twinspears	Spears & Pikes	100	0	0	0	0	100	"Paired spears of the Drang Knights, proclaimed descendants from the land known for the legend of the Linking of the Fire. When the Drang Knights disbanded, they scattered across the lands as sellswords. They quickly became known for shieldless, aggressive tactics that struck fear in the hearts of men.
+Skill: Charge
+Hold spear at waist and charge at foe. Use strong attack while charging to extend the length of the charge. "
+Arstor's Spear	Spears & Pikes	118	0	0	0	0	100	"One of the curses that festered within the belly of the Greatwood, and a terrible weapon favored by Earl Arstor the Impaler. 
+The spear is enwreathed in rotten, heavily poisonous meat. Defeating foes restores HP.
+Skill: Shield Splitter
+Take a large step forward and make a single focused thrust to puncture enemy shields and inflict damage."
+Four-Pronged Plow	Spears & Pikes	105	0	0	0	0	100	"This four-pronged plow is shaped like a fist, and is a worker's tool in the Undead Settlement.
+Not originally intended for battle, but serves as a deadly weapon owing to its sharp points.
+Skill: Charge
+Hold spear at waist and charge at foe. Only, it is important to have good footing. "
+Saint Bident	Spears & Pikes	98	0	0	0	0	100	"A silver bident decorated by a holy symbol, formerly wielded by Saint Klimt. He discarded this weapon, that draws upon one's faith, on the day that he put his own faith behind him. 
+Skill: Charge 
+Hold spear at waist and charge at foe. Use strong attack while charging to extend the length of the charge."
+Rotten Ghru Spear	Spears & Pikes	104	0	0	0	0	100	"A crude, half-rotten curved spear.
+Choice weapon of the blunt-horned Ghrus, descendants of the acolytes of Farron Keep.
+The rancid tip is drenched in rotten waste, making it acutely poisonous.
+Skill: Charge
+Hold spear at waist and charge at foe. Use strong attack while charging to extend the length of the charge."
+Partizan	Spears & Pikes	108	0	0	0	0	100	"Spear with blade attached to broad point. Long reach, and can be used with shield up. Attacks faster with shield down.
+This weapon can utilize its blade for slicing attacks, and is generally adaptable to many situations, but in cramped quarters, its slices ricochet off walls.
+Skill: Spin Sweep
+Sweep foes in a large spinning motion, and utilize momentum to transition into an overhanded strong attack smash."
+Yorshka's Spear	Spears & Pikes	98	0	0	0	0	100	"This treasure, gifted to the Yorshka Church, is enchanted with a soporific spell, and was surreptitiously worshiped by Irithyll slaves. 
+As a weapon, it is part spear and part hammer, the former allowing thrusting, and the latter allowing strikes.
+Skill: Pacify
+With a prayer and an offering of this spear, temporarily wear down enemy FP with each strike."
+Gargoyle Flame Spear	Spears & Pikes	103	0	90	0	0	100	"Stone torch spear wielded by gargoyles of the Profaned Capital.
+The Profaned Flame, which never goes out, imbues this weapon with a fire attack. 
+Skill: Kindled Charge
+Hold spear at waist and charge at foe, using the momentum to transition to a fiery strong attack. "
+Dragonslayer Swordspear	Spears & Pikes	128	0	0	34	0	0	"A dragon hunting weapon from the age of the gods. The earliest form of the cross spear, serving as both a sword and a spear.
+Its owner was the Nameless King, a deific hunter of dragons. The swordspear is imbued with lightning, of which he was the heir.
+Skill: Falling Bolt
+Hold swordspear high in the air to summon fierce lightning that descends upon distant foes. "
+Dragonslayer Spear	Spears & Pikes	113	0	0	70	0	100	"Cross spear associated with Ornstein the Dragonslayer. A weapon of the gods imbued with the strength of lightning.
+Two-handed thrust utilizes the support of the cross and requires great might, but can pierce deep into the flesh of dragons, and send mere men flying.
+Skill: Lightning Charge
+Charge with spear at waist to enwreathe with lightning, then release bolts with final thrust. "
+Golden Ritual Spear	Spears & Pikes	73	77	0	0	0	100	"A ritual spear presented to Darkmoon Knights before Sulyvahn claimed the title of Pontiff.
+Can also be used as a staff. Sorceries cast using this weapon channel the wielder's faith.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. "
+Soldering Iron	Spears & Pikes	39	0	93	0	0	100	"Branding iron used by the jailers prowling Irithyll Dungeon.
+Press its searing tip against foes to inflict fire damage, and temporarily block Estus healing.
+Skill: Charge
+Hold iron at waist and charge at foe. Use strong attack while charging to extend the length of the charge."
+Lothric Knight Long Spear	Spears & Pikes	112	0	0	0	0	100	"Long spear wielded by the proud Lothric Knights. Designed for long-range thrusting.  
+Lothric spear knights are known for their steadfastness, and this spear boosts the poise of its wielder.
+Skill: Charge  
+Hold spear at waist and charge at foe. Use strong attack while charging to extend the length of the charge"
+Greatlance	Spears & Pikes	129	0	0	0	0	100	"This lance features a long pole, and was originally intended to be used by knights for jousting.
+This weapon is primarily used in charging attacks, and would require tremendous strength and dexterity to be handled by a mere foot soldier.
+Skill: Charge
+Hold lance at waist and charge at foe. Use strong attack while charging to extend the length of the charge. "
+Pike	Spears & Pikes	105	0	0	0	0	100	"Long spear with a very long hilt. Designed for long-range thrusting. Has the longest range of the non-projectile weapons, but its very length makes it unwieldy in certain situations.
+Skill: Charge
+Hold spear at waist and charge at foe. Use strong attack while charging to extend distance. "
+Follower Javelin	Spears & Pikes	106	0	0	0	0	100	Light spear wielded by the Farron Followers. Balanced to allow for throwing.
+Ringed Knight Spear	Spears & Pikes	126	0	12	0	0	0	"Black spear wielded by the Ringed Knights.
+The arms of early men were forged in the Abyss, and betray a smidgen of life."
+Lothric War Banner	Spears & Pikes	100	0	0	0	0	100	The flagpole that once carried the Lothric crest, and guided the knights long ago.
+Halberd	Halberds	125	0	0	0	0	100	"This long-hilted weapon mixing spear and axe is difficult to handle, requiring both strength and dexterity
+Can be thrust like a spear or swept sideways like an axe, making it a versatile weapon effective against multiple foes.
+Skill: Charge
+Hold spear at waist and charge at foe. Use strong attack while charging to extend the length of the charge."
+Lucerne	Halberds	126	0	0	0	0	100	"A polearm with a sharp, hard pronged head that inflicts thrust attacks.
+The Lucerne is wielded overhand like a hammer, or can be swung from the side to break through shields.
+Skill: Spin Sweep
+Sweep foes in a large spinning motion, and utilize momentum to transition into an overhanded strong attack smash."
+Winged Knight Halberd	Halberds	135	0	0	0	0	100	"Halberd wielded by the Winged Knights, who swore themselves to the Angels.
+The thick, heavy, bloodstained blade can only be swung by one with inhuman strength.
+Skill: Chain Spin
+Sweep foes in a large spinning motion and use strong attack to continue the motion until stamina is exhausted."
+Red Hilted Halberd	Halberds	130	0	0	0	0	100	"Long-hilted weapon mixing spear and axe. The red-hilted halberd is associated with clerics.
+Can be thrust like a spear or swept sideways like an axe, making it a versatile weapon effective against multiple foes.
+Skill: Perseverance
+Assume an unfaltering stance of prayer to temporarily boost poise. Damage reduced while activated."
+Black Knight Glaive	Halberds	150	0	0	0	0	100	"Glaive of the black knights who wander the lands. Used to face chaos demons.
+The unique attack of this glaive greatly reduces enemy poise, reflecting the tremendous size of the enemies that the knights have fearlessly faced.
+Skill: Spin Sweep
+Sweep foes in a large spinning motion, and utilize momentum to transition into an overhanded strong attack. 
+"
+Gundyr's Halberd	Halberds	145	0	0	0	0	100	"Halberd of Gundyr the Champion, received when he was charged with his duty.
+This old cast-iron halberd has the power to break poise, and is said to never crumble, seeming to suggest that Gundyr was fated to eternal service from the beginning.
+Skill: Champion's Charge
+Hold spear at waist and charge at foe, and use momentum to transition into sweeping strong attack. 
+"
+Immolation Tinder	Halberds	118	0	75	0	0	100	"Profaned Flame wielded by the Irithyllian witches, frigid spirits roaming the Boreal Valley.
+This torch, both a weapon and a staff, is enshrouded in an everlasting flame.
+Skill: Punitive Flame
+Punish foes with a flame that blankets the ground."
+Crescent Axe	Halberds	119	0	0	0	0	100	"A crescent-shaped halberd resembling a long-handled battle axe.
+Traditionally wielded by Way of White clerics.
+Skill: Warcry
+Let out a spirited warcry that temporarily boosts attack."
+Glaive	Halberds	141	0	0	0	0	100	"This halberd with a large blade was a scythe refitted for battle.
+Designed for slicing, and inflicts slash damage.
+Skill: Spin Sweep
+Sweep foes in a large spinning motion, and utilize momentum to transition into an overhanded strong attack smash."
+Splitleaf Greatsword	Halberds	132	0	0	0	0	100	"<em>A long-handled greatsword that made its way from a distant land. Crafted entirely with steel, making it exceedingly heavy.</em>
+<em>Splitleaf refers to the shape of the great blade, and its resemblance to the veins of a leaf.</em>"
+Crucifix of the Mad King	Halberds	124	0	0	0	0	74	A cross spear hung with a malformed corpse. 
+Great Scythe	Reapers	105	0	0	0	0	100	"Attacks with this large scythe, normally used for crop harvesting, are effective at breaking past shields.
+The magnificent sharp curved blade instills fear in opponents. Perhaps it is their survival instinct at work.
+Skill: Neck Swipe
+This attack aims for the scruff of a foe's neck, and when successful, functions as a head shot, inflicting heavy damage."
+Pontiff Knight Great Scythe	Reapers	100	0	0	0	0	100	"Great scythe wielded by the Pontiff's knights, frigid spirits that linger in Irithyll. 
+The large blade appears to be eaten away by insects, making it lightweight but also brittle.
+Skill: Frost
+Create a bone-chilling frost with each swing of the great scythe that causes a temporary frost effect."
+Great Corvian Scythe	Reapers	97	0	0	0	0	100	"Great scythe of the forlorn souls guided by heretical storytellers. The Mistress of the Painted World is said to wield a great scythe herself. Great scythes inflict profuse bleeding, such that the blood splatters on the wielder.
+Skill: Neck Swipe
+This attack aims for the scruff of a foe's neck, and when successful, functions as a head shot, inflicting heavy damage."
+Friede's Great Scythe	Reapers	110	77	0	0	0	100	A great scythe wielded by Sister Elfriede, with a curved blade thinly coated by Painted World frost that easily breaks the guard of shields.
+Whip	Whips	90	0	0	0	0	100	"A leather whip that was never intended for use in combat.
+Of little use against armor and tough scales, but quite formidable against enemies with exposed skin.
+Skill: Impact
+Strike from the left to evade shields and deal a stinging blow that temporarily slows stamina recovery. The shackles of bondage lie deep in the hearts of all humankind."
+Notched Whip	Whips	95	0	0	0	0	100	"A whip with thorny spikes that shred slaves, causing heavy bleeding. 
+The Cleansing Chapel uses whips such as these in order to produce the drops and puddles to wipe clean during its rituals.
+Skill: Impact
+Strike from the left to evade shields and deal a stinging blow that temporarily slows stamina recovery. The shackles of bondage lie deep in the hearts of all humankind."
+Witch's Locks	Whips	77	0	80	0	0	100	"A whip fashioned from the black hair of a daughter of the Witch of Izalith, creator of the Flame of Chaos.
+The long, shining locks woven together to create this whip are imbued with the essence of fire, which can be channeled through the use of its skill. 
+Skill: Flame Whip
+Temporarily coat the whip in fire, the self-same fire as that which consumed the Witch herself, it is said."
+Spotted Whip	Whips	102	0	0	0	0	100	"Whip mottled with venomous-looking spots. Favored by some female pyromancers of the Great Swamp.
+As its noxious appearance would suggest, damage from this whip poisons its victims, slowly but surely guiding them to their deaths.
+Skill: Impact
+Strike from the left to evade shields and deal a stinging blow that temporarily slows stamina recovery. The shackles of bondage lie deep in the hearts of all humankind."
+Rose of Ariandel	Whips	79	0	0	0	0	100	A flail used by the bulbous Father of the Painted World to shred his own skin, producing blood to appease the flame. Both a weapon and a miracle catalyst.
+Short Bow	Bows	77	0	0	0	0	100	"Standard small bow. Its size allows for quick shots. 
+Arrows must be equipped in order to use bows. Up to two kinds of arrow can be equipped at a time, and these can be switched between as necessary.
+Skill: Rapid Fire
+Swiftly nocks arrows with finesse after drawing the bow, allowing for consecutive shots."
+Longbow	Bows	82	0	0	0	0	100	"Longbow commonly used by hunters.
+Arrows must be equipped in order to use bows. Up to two kinds of arrow can be equipped at a time, and these can be switched as necessary.
+Skill: Puncture
+Pull the arrow even further back for a more powerful shot that can also pierce shields."
+Black Bow of Pharis	Bows	67	0	0	0	0	100	"A black longbow named after a hero of old, known for the unusual stance from which it is fired. 
+Has a longer range than standard bows, but successful usage requires a trained, dexterous hand.
+Skill: Pharis Triple-shot
+Swiftly nocks three arrows with finesse after drawing the bow, firing them simultaniously. "
+Dragonrider Bow	Bows	110	0	0	0	0	100	"Longbow of the Dragonriders, who served the Old King of Want. 
+The Dragonriders were the Old King's royal guard, and great strength was demanded of them. Merely drawing this bow calls for inhuman strength. The worthy few who can master this bow, however, use it to devastating effect.
+Skill: Puncture
+Pull the arrow even further back for a more powerful shot that can also pierce shields."
+Composite Bow	Bows	73	0	0	0	0	100	"Composite short bow emphasizing power. Its size allows for quick shots.
+Though more powerful than standard bows, it also requires more strength of the user, and its range is short.
+Skill: Rapid Fire
+Swiftly nocks arrows with finesse after drawing the bow, allowing for consecutive shots."
+Darkmoon Longbow	Bows	36	44	0	0	0	100	"Longbow of Darkmoon Gwyndolin, who was gradually devoured by Aldrich.This golden bow is imbued with powerful magic and is most impressive with Moonlight Arrows.
+Skill: Darkmoon Arrow
+Infuse a readied arrow with Darkmoon essence, granting it magic damage and the ability to pierce shields."
+White Birch Bow	Bows	82	0	0	0	0	100	A short bow crafted with white birch. Endowed with light-manipulating magic.
+Dragonslayer Greatbow	Greatbows	126	0	0	0	0	100	"Greatbow used by the Dragonslayers during the age of gods. Far greater in size than any normal bow, and far more devastating. 
+The bow must be anchored in the ground to be fired, a time consuming operation that leaves the operator vulnerable. Only specialized great arrows can be fired from the bow.
+Skill: Puncturing Arrow
+Masterfully fires off a great arrow that pierces through all enemies in its path, inflicting damage."
+Onislayer Greatbow	Greatbows	111	0	0	0	0	100	"A unique greatbow handed down in an eastern land, where tales are told of its use in slaying giant horned oni.
+Drawing a bow of this size takes time, and leaves the user vulnerable. Only specialized great arrows can be fired from the bow.
+Skill: Puncturing Arrow
+Masterfully fires off a great arrow that pierces through all enemies in its path, inflicting damage."
+Millwood Greatbow	Greatbows	139	0	0	0	0	100	Greatbow crafted with black oak and wielded by Millwood Knights. Only specialized great arrows can be fired from the bow.
+Light Crossbow	Crossbows	64	0	0	0	0	100	"Standard crossbow wielded by common soldiers. Must be readied before firing.
+Bolts must be equipped in order to use crossbows. Up to two kinds of bolt can be equipped at a time, and these can be switched between as necessary.
+Skill: Tackle
+Lunge into a shoulder tackle, pushing back enemies to create distance."
+Knight's Crossbow	Crossbows	40	0	0	40	0	100	"Crossbow used by the proud knights of Lothric. It bears an elaborate gold design.
+The crossbow has been blessed with the power of lightning, in anticipation of the use of Lightning Bolts.
+Skill: Tackle
+Lunge into a shoulder tackle, pushing back enemies to create distance."
+Arbalest	Crossbows	78	0	0	0	0	100	"The largest crossbow, and suitably powerful for its size. 
+The bow string is made of metal, requiring great strength to fire. 
+Skill: Tackle 
+Lunge into a shoulder tackle pushing back enemies to create distance."
+Sniper Crossbow	Crossbows	70	0	0	0	0	100	"Long-range heavy crossbow used by Carim snipers.
+Its lengthy base makes aiming difficult, and accurate usage requires a trained, dexterous hand.
+Skill: Tackle
+Lunge into a shoulder tackle, pushing back enemies to create distance."
+Avelyn	Crossbows	64	0	0	0	0	100	"An extremely rare rapid-firing crossbow.  
+Fires three successive bolts by means of an elaborate mechanism. Inflict heavy damage by making all three shots count.  
+Despite its use as a weapon, this crossbow is also a priceless work of art, and it bears resemblance to a musical instrument. 
+Skill: Tackle
+Lunge into a shoulder tackle, pushing back enemies to create distance. "
+Heavy Crossbow	Crossbows	72	0	0	0	0	100	"A large, powerful crossbow. Must be readied before firing.
+Bolts must be equipped in order to use crossbows.
+Up to two kinds of bolts can be equipped at a time, and these can be switched as necessary
+Skill: Tackle
+Lunge into a shoulder tackle, pushing back enemies to create distance."
+Repeating Crossbow	Crossbows	83	0	0	0	0	100	This crossbow, customized for repeat-firing to face mobs alone, was wielded by Slave Knight Gael.
+Sorcerer's Staff	Staves	60	0	0	0	0	100	"Staff used to cast sorceries. A common catalyst given to sorcerers of the Vinheim Dragon School.
+Equip a catalyst to use sorceries. Sorceries must be tuned at a bonfire before use.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand.
+"
+Court Sorcerer's Staff	Staves	60	0	0	0	0	100	"Catalyst used by the court sorcerers of the Profaned Capital. Very powerful when wielded by an exceptionally intelligent sorcerer.
+The court sorcerers laid claim to the legacy of the renowned Big Hat Logan, going so far as to emulate him with copies of the staff he used.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Heretic's Staff	Staves	63	0	0	0	0	100	"Catalyst used by generations of heretic sorcerers.
+Sorcery is a logical academic discipline, and the power of sorceries depends heavily on the caster's intelligence.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Witch Tree Branch	Staves	57	0	0	0	0	100	"The branch of a large, well-tended witchtree, used as a sorcery catalyst.
+Witchtree staves are customary in the far north, and allow for faster casting than ordinary catalysts.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Sage's Crystal Staff	Staves	84	0	0	0	0	100	"Crystal catalyst presented as a gift from the Crystal Sages to their favorite pupil, Kriemhild. 
+Crystal spheres devour the will of the user, and this staff increases the potency of sorceries at the cost of increased FP consumption by Skills.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Izalith Staff	Staves	120	0	0	0	0	100	"Ancient catalyst of the Witch of Izalith and her daughters, used long before the dawn of chaos and of pyromancy.
+With the birth of the Chaos Flame, the flame witches were at once both sorcerers and shamans. Faith adjusts the power of sorceries cast using this catalyst, and the staff also seems to boost the power of dark sorceries.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Storyteller's Staff	Staves	60	0	0	0	0	100	"Staff of a heretic storyteller who shares tales of the Painted World to forlorn souls.
+The storytellers, too, are wretched beings with no place to go. Their bodies, souls, and even their staves are all tainted through and through.
+Skill: Poison Spores
+Expel noxious spores from the formless, parasitical things that inhabit the staff."
+Archdeacon Great Staff	Staves	89	0	0	0	0	100	"Large staff bestowed upon Archdeacons of the Cathedral of the Deep.
+The Archdeacon McDonnell's trespass, the sin of channeling faith for sorcery, transformed what was once merely a symbol of ecclesiastic authority into a catalyst of sorceries.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Man-Grub's Staff	Staves	90	0	0	0	0	100	"Staff of the man-grubs who guard Rosaria’s Bed Chamber. Their holy symbol is formed at the tip. Wielder’s luck strengthens effects of sorceries.
+The man-grubs have clearly been reborn, but as what?
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Mendicant's Staff	Staves	60	0	0	0	0	100	"A staff with a small bowl attached to the tip, similar to a mendicant's crook. Absorb additional souls from fallen foes.
+The staff's history is unclear. It may be a relic of an ancient serpent's greed, or a ritual artifact used to summon souls.
+Skill: Steady Chant
+Boost the strength of sorceries for a very short period. Works while equipped in either hand."
+Preacher's Right Arm	Staves	100	0	0	0	0	100	The dessicated right hand of a white-faced locust that rose from the abyssal swamp, that happens to perform as a catalyst for sorcery.
+Murky Longstaff	Staves	86	0	0	0	20	100	The long-handled staff wielded by the murkmen who rise from the depths.
+Pyromancy Flame	Flames	0	0	100	0	0	100	"Flame catalyst used by pyromancers. 
+Equip a pyromancy flame to utilize pyromancy. Pyromancies must be attuned at a bonfire before use.
+Skill: Combustion
+Creates a powerful flame in the wielder's hand. One of the most basic pyromancies, and for this very reason, the flame created is fierce. Works while equipped in either hand."
+Pyromancer's Parting Flame	Flames	0	0	110	0	0	100	The pyromancy flame of Livid Pyromancer Dunnel that attracts the echoes of  death.
+Demon's Scar	Flames	0	0	99	0	0	110	"This chaotic thing, the last flame kindled by a demon prince, is shaped like the claw marks of a demon.
+It is both a fiery bladed weapon, and pyromancy flame."
+Talisman	Talismans	52	0	0	0	0	100	"Talisman for casting miracles of the Gods. Once a very common item among the ranks of the old Way of White.
+Equip a Talisman or a sacred chime to cast miracles. Miracles must be attuned at a bonfire before use.
+Skill: Unfaltering Prayer
+Temporarily increase poise while casting miracles, preventing enemy attacks from interrupting prayer. Works while equipped in either hand."
+Saint's Talisman	Talismans	52	0	0	0	0	100	"Medium for casting miracles of the Gods. Ivory talismans are given only to women clerics, and faith greatly affects their effectiveness.
+There is a certain frailty to this talisman, which undermines the steadfastness granted by its Skill.
+Skill: Unfaltering Prayer
+Temporarily increases poise while casting miracles, preventing enemy attacks from interrupting prayer. Works while equipped in either hand."
+Sunlight Talisman	Talismans	52	0	0	0	0	100	"The Knight of Sunlight's personal talisman for casting miracles of the Gods.
+The talisman bears the Knight's own holy illustration, an emblem of his unwavering faith. Use of the talisman's Skill fills the user with similar steadfastness.
+Skill: Unfaltering Prayer
+Temporarily increases poise while casting miracles, preventing enemy attacks from interrupting prayer. Works while equipped in either hand."
+White Hair Talisman	Talismans	73	0	79	0	0	100	"Talisman made from a lock of white hair.
+This lock of hair belonged to a deformed member of the chaos witches, mothers of the art of pyromancy. Fashioned into a talisman, it enables the wielder to cast both miracles and pyromancies.
+Skill: Combustion
+Creates a powerful flame in the wielder's hand. One of the most basic pyromancies, and for this reason, the flame created is fierce. Works while equipped in either hand."
+Sunless Talisman	Talismans	74	0	0	0	0	0	"Talisman given to the knights of the Sunless Realm, who serve the nameless moon.
+Scales with intelligence, which is rare for a miracle catalyst, but makes it compatible with Dark. In this Sunless Realm, this fact is related first as an initial warning.
+Skill: Unfaltering Prayer
+Temporarily increases poise while casting miracles, preventing enemy attacks from interrupting prayer. Works while equipped in either hand."
+Canvas Talisman	Talismans	52	0	0	0	0	100	"Medium for casting miracles of the Gods. Canvas talismans are austere items carried by heralds.
+Equip a talisman or a sacred chime to cast miracles. Miracles must be attuned at a bonfire before use.
+Skill: Unfaltering Prayer
+Temporarily increase poise while casting miracles, preventing enemy attacks from interrupting prayer. Works while equipped in either hand."
+Priest's Chime	Chimes	52	0	0	0	0	100	"Sacred chime for casting miracles of the Gods, of the type given to Lothric priests. To cast a miracle, the caster learns a tale of the Gods, and says a prayer to be blessed by its revelations. The faith of the supplicant affects the strength of the miracle.
+Skill: Gentle Prayer
+Recovers HP for a period of time, albeit extremely slowly. Works while equipped in either hand.
+"
+Cleric's Sacred Chime	Chimes	52	0	0	0	0	100	"Sacred chime for casting miracles of the Gods. Chimes such as these are often given to clerics who become Undead.
+Equip a talisman or a sacred chime to cast miracles. Miracles must be attuned at a bonfire before use.
+Skill: Gentle Prayer
+Recovers HP for a period of time, albeit extremely slowly. Works while equipped in either hand."
+Caitha's Chime	Chimes	74	0	0	0	0	100	"Sacred chime blessed by Caitha, goddess of tears. 
+Rare even amongst Carim clerics. Affected by intelligence, a rare thing for miracle catalysts, and also agreeable with miracles that lean towards the Dark. Its existence is concealed in the name of the Archbishop, as it is anathema.
+Skill: Gentle Prayer
+Recovers HP for a period of time, albeit extremely slowly. Works while equipped in either hand."
+Saint-tree Bellvine	Chimes	52	0	0	0	0	100	"Sacred chime for casting miracles of the Gods. A bellvine cut from a small saint-tree that has been meticulously tended to. 
+Saint-tree bellvines are customary in the far north, and allow for faster casting than ordinary sacred chimes. 
+Skill: Gentle Prayer 
+Recovers HP for a period of time, albeit extremely slowly. Works while equipped in either hand."
+Crystal Chime	Chimes	73	0	0	0	0	100	"A sacred chime, once the possession of Gertrude, the Heavenly Daughter, and defiled by the scholars of the Grand Archives.
+The power of crystals granted the scholars a degree of success. In this case, their work enabled this chime to be suitable for casting both miracles and sorceries.
+Skill: Gentle Prayer
+Recovers HP for a period of time, albeit extremely slowly. Works while equipped in either hand.
+"
+Yorshka's Chime	Chimes	54	0	0	0	0	100	"A sacred chime belonging to Yorshka. Her brother, the former knight captain, presented her with this medium together with another gift: her name.
+The ringing of the chime must have done much to soothe her loneliness.
+Skill: Gentle Prayer
+Recovers HP for a period of time, albeit extremely slowly. Works while equipped in either hand."
+Sacred Chime of Filianore	Chimes	74	0	0	0	0	100	A sacred chime blessed by Princess Filianore, matriarch of the church.
