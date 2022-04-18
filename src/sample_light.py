@@ -52,8 +52,12 @@ for base_form in base_descriptions.keys():
 # %%
 for base_form, objs in rend_descriptions.items():
     for obj in objs:
-        
         if obj['hypo_desc'] == '':
+            # obj['hypo_desc'] = rend_desc(
+            #     obj['full_name'], 
+            #     obj['category'], 
+            #     obj['base_desc']
+            # )
             print(obj['full_name'])
 
 # %%
