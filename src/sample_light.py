@@ -50,3 +50,10 @@ for base_form in base_descriptions.keys():
         rend_descriptions[base_form].append(obj)
 
 # %%
+for base_form, objs in rend_descriptions.items():
+    for obj in objs:
+        
+        if obj['hypo_desc'] == '':
+            print(obj['full_name'])
+
+# %%
