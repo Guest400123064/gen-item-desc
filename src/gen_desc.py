@@ -15,7 +15,7 @@ logging.basicConfig(
     handlers=[LoggingHandler()]
 )
 
-KEY_BASE = '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'
+KEY_BASE = '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'
 KEY_REND = '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'
 MDL_BASE = 'ada:ft-cis-700-31-2022-04-10-23-27-31'
 MDL_REND = 'ada:ft-cis-700-14-2022-04-11-02-46-54'
