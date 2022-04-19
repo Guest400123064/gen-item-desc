@@ -15,7 +15,7 @@ logging.basicConfig(
 )
 
 KEY_BASE = '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'
-KEY_REND = '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'
+KEY_REND = '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'
 MDL_BASE = 'ada:ft-cis-700-31-2022-04-10-23-27-31'
 MDL_REND = 'ada:ft-cis-700-14-2022-04-11-02-46-54'
 
