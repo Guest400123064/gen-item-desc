@@ -1,0 +1,353 @@
+% This must be in the first 5 lines to tell arXiv to use pdfLaTeX, which is strongly recommended.
+\pdfoutput=1
+% In particular, the hyperref package requires pdfLaTeX in order to break URLs across lines.
+
+\documentclass[11pt]{article}
+
+% Remove the "review" option to generate the final version.
+\usepackage[]{acl}
+
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+%\setlength\titlebox{<dim>}
+%
+% and set <dim> to something 5cm or larger.
+
+% For code listing
+\usepackage{listings}
+\usepackage{cleveref}
+\usepackage{booktabs}
+
+\title{\textbf{Nobody Writes Docstring:} Game Item Description Generation with Pretrained Language Models}
+
+% Author information can be set in various styles:
+% For several authors from the same institution:
+% \author{Author 1 \and ... \and Author n \\
+%         Address line \\ ... \\ Address line}
+% if the names do not fit well on one line use
+%         Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n} \\
+% For authors from different institutions:
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \And  ... \And
+%         Author n \\ Address line \\ ... \\ Address line}
+% To start a seperate ``row'' of authors use \AND, as in
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \AND
+%         Author 2 \\ Address line \\ ... \\ Address line \And
+%         Author 3 \\ Address line \\ ... \\ Address line}
+
+
+
+\author{
+  Ning Wan \quad
+  Hongyu Zhang \quad
+  Yuxuan Wang \\
+  Department of Computer and Information Science\\
+	University of Pennsylvania\\
+	Philadelphia, PA 19104 \\
+  \texttt{\{ningwan, hz53, wangy49\}@seas.upenn.edu}
+ }
+
+\begin{document}
+
+% Define a custom color
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+
+% Define a custom style
+\lstdefinestyle{myStyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    keepspaces=true,                 
+    numbers=left,       
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+}
+
+% Use \lstset to make myStyle the global default
+\lstset{style=myStyle}
+
+\maketitle
+\begin{abstract}
+In any text adventure game, it is often time-consuming to think and write about full descriptions of all items in game. Based on NLP techniques, we design a method to automatically generate full item descriptions in game based on item name, item simple description, and game category.
+\end{abstract}
+
+\section{Project Description}
+  Nobody wants to write docstring. What if we can build a better description generator? 
+    Recall the games you played; the item descriptions contains information particular to 
+    the game settings or the game-world settings For example, you know the item is from \textit{Dark Souls} or \textit{Don't Starve} 
+    simply by reading the text: even when they are not! Therefore, our work is more 
+    developer-oriented, particularly convenient for those who want to develop mods for 
+    their favorite games and conform to a consistent world setting or style of writing. So, in this project, 
+    we would like to revisit Homework Two, the description generation. 
+    We want a generator that takes an item title as input and generates a 
+    corresponding "gamified" item description. However, instead of building an 
+    end-to-end system as we have done in Homework Two, we observe that such a task 
+    is two-fold:
+    \begin{itemize}
+      \item Generate a basic description for a simplified item name that depicts the main properties of this item. 
+        For instance, a sword is made of metal, a pointy weapon.
+      \item Render the utterance to sound like a game item when we condition it on the game category and full 
+        item name like \textit{King Arthur's Sword}.
+    \end{itemize}
+    To sum, we want to formulate this task as a combination of description generation and conditioned style transfer problem.
+
+
+\section{Related Work}
+  Our project leverages the recent advancement of large \textbf{Pre-trained Language Models} (PLM), e.g., 
+    GPT-3, T5, and BART \cite{gpt-3, t5, bart}. Further, it is shown that such PMLs can serve as knowledge bases, 
+    especially salient for simple factual knowledge \cite{comet, kblm}. This inspires us of using large PLMs as 
+    base description generator.
+
+  Our formulation of game item description generation resembles the most to the \textbf{Text Style Transfer} (TST) 
+    task with some variation. 
+    TST aims to control certain attributes in the generated text, such as politeness, emotion, humor, 
+    and many others \cite{tst_survey}. It involves a source style and a target style. In our case, the source 
+    style is the simple item description, where as the target style is the gamified description. Specifically, 
+    given the base description, we can construct a parallel dataset where standard sequence-to-sequence models 
+    can be applied \cite{s2s_style}.
+
+    However, we need to keep in mind that the renderer functions not only as a style transferer but also as a 
+      domain-specific knowledge base. For example, to generate fantasy-game-related item descriptions, a renderer 
+      needs to have prior knowledge about terms like Mana, Goblin, or Holy Grail. And we do not expect an out-of-the-box 
+      model has such knowledge pre-encoded \cite{domain_adaptation}. Therefore, the specific methods to solve this problem are under discussion.
+
+
+\section{Methods}
+  \subsection{Proposed Architecture}
+    According to our observation, we can decompose the game-item description 
+      generation as a two-phase process: base form description generation and rendering.
+      The two models are collated together to form a game item descriptor.
+
+    \subsubsection{Base Generator}
+    \paragraph{Prompting Baseline} First of all, almost every game item has a "base form." Such base forms can be weapons, 
+      garments, or food. The base form of a game item reveals its essential properties. 
+      For instance, \textit{Excalibur} is still a sword, a pointy weapon (possibly) made of a 
+      piece of metal. Therefore, intuitively, to generate a description for a game item, 
+      we need a particular mechanism to help create a piece of text for its base form in 
+      the first place. Such a machine needs to possess common sense knowledge about the 
+      properties of various base forms, which naturally leads to large PLMs or models 
+      trained upon knowledge bases. Formally, a generator is a function with the signature,
+      \lstinputlisting[
+        caption={The generator model API. 
+        It should take a single item like 'sword' 
+        and generate some common-sense-based 
+        description for that item, e.g.,
+        'a pointy piece of metal'.
+        The \lstinline{model} here is an abstraction, 
+        it can be a large PLM like GPT-3 
+        or specialized knowledge-base model 
+        like COMET-BART},
+        label={lst:code-api-generator}, 
+        language=Python
+      ]{api_generator.py}
+      
+  \subsubsection{Game Renderer}
+    \paragraph{Prompting Baseline} Next, we believe that two extra pieces of information contribute to the "game flavor" 
+      of the description. Firstly, where do these items appear? For instance, a cup in a 
+      dungeon may associate with adjectives like "filthy" or "rusty," while a mug in a 
+      kitchen can be "clean" or "cute." Secondly, the full name of that item, e.g., 
+      \textit{King Arthur Sword} instead of \textit{Sword}. We know that this particular weapon is from 
+      \textit{King Arthur's Legend}. So the corresponding descriptions should relate to terms like 
+      \textit{Avalon}, \textit{Knights of the Round Table}, or \textit{Holy Grail}. We can see that it also requires 
+      the renderer to have another set of common sense knowledge. However, such knowledge 
+      is more game-specific or world-specific: it is not likely to have a machine gun in 
+      greek mythology. In other words, the renderer serves as an (inverse) adapter, and 
+      the engineering advantages brought by the disentanglement are apparent, i.e., we do 
+      not need to re-train the often-humongous base generator when switching to a different 
+      set of settings or game. 
+      \lstinputlisting[
+        caption={The renderer model API. It rephrase/diversify the item description conditioning on the \lstinline{setting, full_name}, and pre-computed \lstinline{base_desc}},
+        label={lst:code-api-renderer}, 
+        language=Python
+      ]{api_renderer.py}
+      
+  \subsubsection{Item Base Form Extractor}
+    Another small but important piece of building block is the item base form extractor. 
+      Ideally, a user of our proposed system only needs to specify the full name of a game 
+      item, but a base generator only takes the \textbf{base form} as its input. Thus, we 
+      need a dedicated algorithm to extract/convert the game item to its base form. We 
+      currently explored two approaches. The first method is based on KeyBERT, which 
+      tries to find a subset of the tokens that best preserves the semantic information, measured 
+      by \textbf{cosine-similarity} between full name contextualized embedding and those of the sub-tokens'. However, the base form may not necessarily contained in the full name. So, another
+      method we proposed is to, again, rely on large PLMs and text-generation. We experimented 
+      with generation using COMET-BART via \textit{MadeOf} relation, and prompting-by-example with 
+      GPT-3. The GPT-3 model gives the best performance.
+      
+\subsection{Model Development Procedure}
+    We introduce both planned development procedure as well as 
+      preliminary experiments in this section.
+
+    \subsubsection{Generator Construction}
+      \paragraph{Prompting Baseline} As discussed above, the base description generation relies on a 
+        large PLM that can serve as a knowledge base. Therefore, we develop our baseline model based 
+        on \textbf{GPT-3} via \textbf{few-shots prompting}. We construct the prompt by concatenating 
+        ten \lstinline{"item: <ITEM>, description: <DESC>"} pairs. An example is shown below,
+        \begin{lstlisting}
+
+prompt = f"""
+item: Sunglasses, 
+description: All of our sung... \n
+item: Scarf,
+description: Feature Great quality... \n
+                  ...
+item: Shoe, 
+description: Kick back and relax... \n
+item: {NEW_ITEM}
+description: {TO_BE_COMPLETE}
+"""
+        \end{lstlisting}
+        The item descriptions we used is acquired from the Amazon Review Dataset, which is discussed 
+          in \cref{section:data}.
+      
+      \paragraph{Fine Tuning} We fine-tuned the data manually collected from Amazon Dataset and Wikipedia in order to make the generated description have advertising style with a bit formality. The tuning is comprised of the prompt with item name included and completion with description included. We try to make the generated description as much as possible to give out a through base description, so the maximum generated length keeps at the original upper limit in OpenAI.
+
+    \subsubsection{Renderer Construction}
+      \paragraph{Prompting Baseline} Again, we use \textbf{GPT-3 prompting} for the proof-of-concept purpose. An example prompt is shown below,
+        \begin{lstlisting}
+
+prompt = f"""
+item: Wood table 
+category: Tavern 
+base_desc: The table is made of wood ... 
+desc: The table is old and dusty ... 
+===\n
+                  ...
+item: {FULL_NAME} 
+category: {SETTING} 
+base_desc: {BASE_DESC} 
+desc: {TO_BE_COMPLETE}
+"""
+        \end{lstlisting}
+        The base description is generated from pre-constructed base-desc-generator, and target description 
+          is taken from the LIGHT dataset, discussed in \cref{section:data}.
+
+      \paragraph{Fine Tuning} For the renderer, we fine-tuned the GTP-3 model by choosing 8 items from each game category in LIGHT dataset. Specifically, for each item we chose, we record the room it was in, and then we could retrieve the corresponding game category. In addition, we also generate the simple description of this item using the generator discussed in section 3.2.1. Then, we construct the prompt by including the item name, game category, and its generated base description. The completion for this item is the full description we get from the LIGHT dataset, plus a stop token \lstinline{"==="}.
+    \subsubsection{Special Model For Dark Souls}
+    This model is targeted at generating dark-souls-styled item description. Due to the uniqueness of the explanations for most items in dark souls, it is separated from generalized version of docstring generation model. This model follows the same logic as the base and render generator part but with all the fine-tuned data set as crawled info from the official Dark Souls website.
+
+\section{Data}
+\label{section:data}
+  \subsection{Amazon Review (Meta) Data} 
+    This dataset contains product reviews and metadata from Amazon, including 142.8 million reviews 
+      spanning from May 1996 to July 2014. This dataset includes reviews (ratings, text, helpfulness votes), 
+      product metadata (descriptions, category information, price, brand, and image features), and 
+      links (also viewed/also bought graphs) \footnote{https://jmcauley.ucsd.edu/data/amazon/}. For this project, \textbf{we only use the metadata} which 
+      contains \textbf{item names} and corresponding \textbf{short descriptions}. But, we noticed that 
+      the dataset is noisy (for our purpose). For instance, it may include advertising 
+      text that is depicting the properties of the (base) item. Thus, we manually select a tiny subset of 
+      descriptions that are more relevant. Further, we plan to augment the dataset with Wikipedia descriptions.
+
+  \subsection{Wikipedia}
+  Since Wikipedia could give some official explanations of items, it is a great attempt to collect items' corresponded elaboration in there. The item names we get from Wiki has some overlap with the ones in Amazon Dataset in order to help the fine-tuning process. We get the data in a similar way as we do for Amazon Dataset. Due to the fact that the data is clean enough, it would be very convenient to grab the first paragraph for each term page as the description without further format adjustment. The final fine-tuning data for base generator is composed of 50 wikis and 50 Amazon data.
+
+  \subsection{LIGHT} We briefly discuss the LIGHT dataset since we frequently work with this dataset throughout
+    this course. At this stage, we only use the objects dataset. For each one of the game items, there are 
+    \lstinline{'name'}, \lstinline{'in_room_ids'}, \lstinline{'base_form'}, and \lstinline{'descriptions'}. 
+    To formulate a style transfer task, we first apply 
+    the pre-constructed base generator to \lstinline{'base_form'} to make a pseudo-parallel dataset. 
+    Next, for the rooms an item exists in, we use the \lstinline{'category'} of the rooms to control the 
+    style transfer (use as \lstinline{'setting'}). Finally, we have the required information for the renderer.
+    
+  \subsection{Dark Souls} Dark Souls' wiki is known for its speciality in illustrating item. For example, it always formally describes one item at first and then show some unrelated and a little hilarious stuff. Hence, this data is specially prepared for those games which need that style. We crawl those data from the official website \lstinline{'https://darksouls3.wiki.fextralife.com'} by taking use of the property of HTML. Weapons are our focused crawling target. Totally, there are over 200 weapon info scraped from Dark Souls 3.
+
+\section{Evaluation}
+
+\paragraph{Metrics} The most important component of our system is the renderer. We primarily focus on evaluating lexical overlapping and semantic preservation. We use the \textbf{BLEU Score} \cite{papineni-etal-2002-bleu} to measure the lexical overlap. To evaluate the degree of semantic preservation, we plan to use \textbf{BERTScore} \cite{bert-score} and \textbf{SentenceBERT} \cite{reimers-2019-sentence-bert} to compute the semantic similarity between the generated text and the ground truth. The perfect result would be the two pieces of texts being almost paraphrases of each other. We discard \textbf{Perplexity} evaluation because the game item descriptions may naturally be very complex because the "uncommon words," i.e., game-specific words, are very common. 
+
+Besides automated evaluations, we consider human evaluations to determine the quality of the generated item descriptions. We proposed 3 criterion for human evaluation: overall quality, consistency with item name, and consistency with game category. Each criteria uses 5 point rating scale, where a score of 1 means the worst, and a score of 5 means the best. We plan to use anonymous Google forms to let people rate our generated descriptions. At current time, we have not yet passed the forms out to people and we plan to do it in this week.
+
+\paragraph{Test Set Sampling}
+To evaluate on the LIGHT objects dataset, we randomly select 10\% base forms such as \textit{trees, cookpot,} and \textit{stones}. Then, we use the fine-tuned GPT-3 to generate the base descriptions for these selected base items. Next, for all items belonging to these sampled base forms, we apply the renderer to produce game object descriptions and evaluate the generation quality using the above metrics. There are 99 base forms and 209 LIGHT game items in total.
+
+\paragraph{Evaluation Parameters}
+For BERTScore, we use \lstinline{roberta-large} as the encoder, which is the default setting. For paraphrase detection using SentenceBERT, we use \lstinline{paraphrase-albert-small-v2} for sentence encoding. Then, given the two embedding for LIGHT object description and generated description, we compute the cosine similarity between them. Lastly, for the BLEU Score, we first tokenize the descriptions with \lstinline{wordpunct_tokenize}, then lemmatize the tokens with \lstinline{WordNetLemmatizer} and remove stop words, using \lstinline{nltk} \cite{bird2009natural}. The bi-gram and tri-gram scores are almost exclusively zero. Thus, we only report uni-gram BLEU score.
+
+\section{Results}
+\subsection{Renderer Results}
+For our renderer, after fine-tuning, we observed some promising results. Using our renderer, we are able to generate full descriptions that are different in style, when the game category changes. We put a few examples in Table~\ref{table1} below. From these examples, we can clearly see that in the \textbf{Abandoned} game setting, the description of the \textbf{Excalibur sword} includes phrases like "old and worn". This description is very differently from the description in the \textbf{Dungeon} game setting. In addition, in the \textbf{Wasteland} game setting, the description of \textbf{haunted totem} includes phrases like "is old and creaked when they were touched". And when the game setting is changed to \textbf{netherworld}, the description 
+includes phrases like "carved from the heart of a
+woman", which fits the category of netherworld. Such evidence suggests that our renderer shows some degree of text style transfer. 
+
+\subsection{Dark souls renderer example TODO}
+
+\begin{table*}
+\centering
+\begin{tabular}{ll|p{75mm}}
+\hline
+\textbf{Item} & \textbf{Category} & \textbf{Description}\\
+\hline
+Excalibur sword & Abandoned & The sword is old and worn from use. The hilt is adorned with a seal that clearly shows the name of the late king. \\
+Excalibur sword & Dungeon & The Excalibur sword is the kings best weapon. It is sharp as a tack, and its black blade is as sharp as any person's eye.\\
+haunted totem & Wasteland & The totem is carved from a dark wood and has a twisted black design. The wood is old and creaked when they were touched.\\
+haunted totem & netherworld & The totem has been carved from the heart of a woman who has seen and done it all. The stone around the stone circle is carved from the blood of her enemies and the wood is made of choice wood from the forest.\\
+\hline
+\end{tabular}
+\caption{\label{table1}
+Examples of generated descriptions of the same item in different game settings.
+}
+\end{table*}
+
+\subsection{Evaluation Results}
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{llll}
+    \caption{Renderer quality automated evaluation over LIGHT dataset.}
+    \toprule
+    Metric          & Mean  & Stdev.\\
+    \midrule 
+    BLEU            & 0.191 & 0.123 \\
+    Paraphrase      & 0.524 & 0.156 \\
+    BERT-Precision  & 0.879 & 0.028 \\
+    BERT-Recall     & 0.886 & 0.035 \\
+    BERT-F1         & 0.882 & 0.026 \\
+    \bottomrule\\
+    \end{tabular}
+    \label{tab:render-light-eval}
+\end{table}
+
+
+\section{Discussion}
+TODO
+\section{Attribution}
+Below is our contributions to the project:\\
+Ning Wan handled the generator models, including the base generator and the fine-tuned model. Ning Wan also collected and trained the Dark Souls data.\\
+Hongyu Zhang handled the rendered models, including the base model and the fine-tuned model. \\
+Yuxuan Wang also experimented with the renderer and handled the evaluation of the models.\\
+
+\section*{Acknowledgements}
+We would like to thank Professor Chris Callison-Burch, Dr. Lara J. Martin, Teaching Assistant Liam Dugan and Teaching Assistant Artemis Panagopoulou for their support and guidance. We would especially like to express thanks to TA Liam Dugan for his guidance and insight in our project.
+
+\newpage
+
+% Entries for the entire Anthology, followed by custom entries
+\bibliography{anthology, custom}
+\bibliographystyle{acl_natbib}
+
+
+\end{document}
